@@ -30,21 +30,21 @@
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/txtUsername"
+            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
-            android:text="Username"
+            android:text="Masukan Email"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/etUsername"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtUsername"
+            android:layout_below="@+id/txtEmail"
             android:background="@drawable/backround_edittext"
-            android:hint="Username"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textSize="20sp" />
@@ -53,10 +53,10 @@
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/etUsername"
+            android:layout_below="@id/etEmail"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
-            android:text="Password"
+            android:text="Masukan Password"
             android:textSize="20sp" />
 
         <EditText
@@ -105,7 +105,8 @@
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/txtBelumAkun"
             android:text="Register"
-            android:textColor="#17B61F" />
+            android:textColor="#17B61F"
+            android:layout_toRightOf="@id/txtBelumAkun" />
 
 
     </RelativeLayout>

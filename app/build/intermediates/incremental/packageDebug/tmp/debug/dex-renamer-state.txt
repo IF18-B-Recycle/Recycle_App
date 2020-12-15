@@ -1,0 +1,4 @@
+#Tue Dec 15 17:12:12 ICT 2020
+base.0=C\:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
