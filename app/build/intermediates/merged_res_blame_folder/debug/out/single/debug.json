@@ -1,102 +1,238 @@
 [
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_button.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\drawable\\background_button.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_my_order.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_my_order.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_history.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_backround_edittext.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\drawable\\backround_edittext.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xhdpi\\ic_myorder.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_history.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_history.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_profile.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_backround_edittext.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable\\backround_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-mdpi\\ic_myorder.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_myorder.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_myorder.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_myorder.xml"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-hdpi\\ic_myorder.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-mdpi\\ic_profile.png"
     },
     {
-        "merged": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Awal Rafi Hardika\\Documents\\Materi Kuliah Semsester 4\\PMO1\\Recycle_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_button.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable\\background_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-hdpi\\ic_history.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_profile.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-hdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_home.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-mdpi\\ic_history.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_history.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_myorder.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xhdpi\\ic_history.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-mdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_history.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_myorder.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_myorder.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\color_selector.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\color\\selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_history.png.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_history.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     }
 ]
