@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_myorder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_konfirmasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDC9C9"
+                android:padding="8dp"
+                android:text="Not Accepted"
+                android:textColor="#E31A1A"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_tanggal_transaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_konfirmasi"
+                android:padding="8dp"
+                android:text="18/12/2020"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_idTransaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_konfirmasi"
+                android:layout_alignRight="@+id/txt_tanggal_transaksi"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="0000001"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_tanggal_transaksi"
+                android:padding="8dp"
+                android:text="Luky Rafi Anuggilarso"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nama"
+                android:padding="8dp"
+                android:text="Desa Pekuncen Kec.Pekuncen"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_totalHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_alamat"
+                android:padding="8dp"
+                android:text="Rp.20.000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

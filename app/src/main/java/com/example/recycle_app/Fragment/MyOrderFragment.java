@@ -3,64 +3,76 @@ package com.example.recycle_app.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.recycle_app.Adapter.MyOrderAdapter;
 import com.example.recycle_app.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MyOrderFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
 public class MyOrderFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    ArrayList<String> mKonfrimasi = new ArrayList<>();
+    ArrayList<String> mTanggalTransaksi = new ArrayList<>();
+    ArrayList<String> mIdTransaksi = new ArrayList<>();
+    ArrayList<String> mNama = new ArrayList<>();
+    ArrayList<String> mAlamat = new ArrayList<>();
+    ArrayList<String> mTotalHarga = new ArrayList<>();
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public MyOrderFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MyOrderFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MyOrderFragment newInstance(String param1, String param2) {
-        MyOrderFragment fragment = new MyOrderFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_order, container, false);
+        View view = inflater.inflate(R.layout.fragment_my_order, container, false);
+
+        mKonfrimasi.add("Belum Di Accept");
+        mTanggalTransaksi.add("18/12/2020");
+        mIdTransaksi.add("00001");
+        mNama.add("Luky Rafi");
+        mAlamat.add("Pekuncen");
+        mTotalHarga.add("Rp. 10.000");
+
+        mKonfrimasi.add("Belum Di Accept");
+        mTanggalTransaksi.add("18/12/2020");
+        mIdTransaksi.add("00002");
+        mNama.add("Galih Prasetya");
+        mAlamat.add("Purwokerto");
+        mTotalHarga.add("Rp. 10.000");
+
+        mKonfrimasi.add("Belum Di Accept");
+        mTanggalTransaksi.add("18/12/2020");
+        mIdTransaksi.add("00003");
+        mNama.add("Awal Rafi");
+        mAlamat.add("Purwokerto");
+        mTotalHarga.add("Rp. 10.000");
+
+        mKonfrimasi.add("Belum Di Accept");
+        mTanggalTransaksi.add("18/12/2020");
+        mIdTransaksi.add("00004");
+        mNama.add("Melinia");
+        mAlamat.add("Cilacap");
+        mTotalHarga.add("Rp. 10.000");
+
+        mKonfrimasi.add("Belum Di Accept");
+        mTanggalTransaksi.add("18/12/2020");
+        mIdTransaksi.add("00005");
+        mNama.add("Faiz Nofal");
+        mAlamat.add("Purwokerto");
+        mTotalHarga.add("Rp. 10.000");
+
+        //koneksikan dengan adapter
+        RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.recyclerview);
+        MyOrderAdapter adapter = new MyOrderAdapter(getContext(), mKonfrimasi, mTanggalTransaksi, mIdTransaksi, mNama, mAlamat, mTotalHarga);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+        return view;
     }
 }
