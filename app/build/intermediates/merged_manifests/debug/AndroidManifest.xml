@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Recycle_App" >
+        <activity android:name="com.example.recycle_app.Activity_About_AwalRafiHardika" />
+        <activity android:name="com.example.recycle_app.About.Activity_About_AwalRafiHardika" />
+        <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
         <activity android:name="com.example.recycle_app.RegisterActivity" />
         <activity android:name="com.example.recycle_app.MainActivity" />
         <activity android:name="com.example.recycle_app.LoginActivity" >
