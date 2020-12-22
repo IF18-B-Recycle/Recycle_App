@@ -1721,6 +1721,7 @@ id blocking
 id bottom
 id bottom_navigation
 id bounce
+id btEdit
 id btLogin
 id btRegister
 id buttonPanel
@@ -2015,13 +2016,18 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtAboutView
+id txtAlamat
 id txtBelumAkun
 id txtEmail
 id txtFirstName
 id txtLastName
 id txtLogin
+id txtNama
+id txtNoHp
 id txtPassword
 id txtRegister
+id txtprofile
 id unchecked
 id uniform
 id unlabeled

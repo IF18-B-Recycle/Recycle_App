@@ -1,15 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ini adalah Fragment Profile"
-        android:textSize="20sp"/>
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <RelativeLayout
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="123dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Nama          : "
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtNoHp"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNama"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="No HP         :"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNoHp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Alamat        :"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAlamat"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Email           :"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/txtAboutView"
+                android:layout_width="380dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/btEdit"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Aplikasi Ini Merupakan aplikasi jual beli rongsok online, dimana nantinya pengepul akan menuju lokasi user untuk mengambil rongsoknya "
+                android:textSize="20sp" />
+            <Button
+                android:background="@drawable/background_button"
+                android:id="@+id/btEdit"
+                android:layout_below="@id/txtEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Edit" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
