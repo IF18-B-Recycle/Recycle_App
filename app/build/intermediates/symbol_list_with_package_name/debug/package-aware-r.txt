@@ -1580,6 +1580,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_gambar
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1628,7 +1629,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profil_awal
+drawable profil_faiz
 drawable profil_luky
+drawable profil_melinia
 drawable profile_galih
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1638,8 +1641,11 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id ImageMelinia
 id META
 id NO_DEBUG
+id NamaTempat
+id Owner
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1647,6 +1653,9 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TxtMNim
+id TxtMTugas
+id TxtMnama
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1731,6 +1740,7 @@ id buttonPanel
 id cache_measures
 id cancel_action
 id cancel_button
+id cardView
 id cardview
 id center
 id center_horizontal
@@ -1750,6 +1760,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id constraint
 id container
 id content
 id contentPanel
@@ -1841,6 +1852,7 @@ id jumpToStart
 id labeled
 id largeLabel
 id layout
+id layoutHome
 id left
 id light
 id line1
@@ -1918,6 +1930,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewHome
 id recyclerview
 id reverseSawtooth
 id right
@@ -2027,6 +2040,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvnamaTempat
 id txtAboutView
 id txtAlamat
 id txtBelumAkun
@@ -2121,7 +2135,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity__about__awal_rafi_hardika
 layout activity__about__luky_rafi_anuggilarso
+layout activity_about_faiz_noval_fajri
 layout activity_about_galih_prasetya_widodo
+layout activity_about_melinia_indah_wardhani
+layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_register
@@ -2146,6 +2163,7 @@ layout fragment_home
 layout fragment_my_order
 layout fragment_profile
 layout item_myorder
+layout list_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
