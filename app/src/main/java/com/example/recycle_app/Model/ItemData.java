@@ -1,37 +1,28 @@
 package com.example.recycle_app.Model;
 
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class ItemData {
-    private String itemName;
-    private String itemOwner;
-    private int itemImage;
+    public String nama_toko;
+    public String owner;
 
-    public ItemData(String itemName, String itemOwner, int itemImage){
-        this.itemName = itemName;
-        this.itemOwner = itemOwner;
-        this.itemImage = itemImage;
+    public ItemData() {
+
     }
 
-    public String getItemName() {
-        return itemName;
+    public ItemData(String nama_toko, String owner) {
+        this.nama_toko = nama_toko;
+        this.owner = owner;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
-
-    public String getItemOwner() {
-        return itemOwner;
-    }
-
-    public void setItemOwner(String itemOwner) {
-        this.itemOwner = itemOwner;
-    }
-
-    public int getItemImage() {
-        return itemImage;
-    }
-
-    public void setItemImage(int itemImage) {
-        this.itemImage = itemImage;
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("nama_toko", nama_toko);
+        result.put("owner", owner);
+        return result;
     }
 }

@@ -1,5 +1,6 @@
 com/example/recycle_app/Fragment/HomeFragment.java
  com.example.recycle_app.Fragment.HomeFragment
+ com.example.recycle_app.Fragment.HomeFragment$1
 com/example/recycle_app/Model/Pengguna.java
  com.example.recycle_app.Model.Pengguna
 com/example/recycle_app/About/Activity_About_LukyRafiAnuggilarso.java
@@ -37,5 +38,3 @@ com/example/recycle_app/LoginActivity.java
  com.example.recycle_app.LoginActivity$3$1
 com/example/recycle_app/Adapter/MyListAdapter.java
  com.example.recycle_app.Adapter.MyListAdapter
- com.example.recycle_app.Adapter.MyListAdapter$1
- com.example.recycle_app.Adapter.MyListAdapter$MyListHolder
