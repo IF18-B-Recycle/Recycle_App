@@ -1,4 +1,4 @@
-#Tue Dec 29 10:36:20 ICT 2020
-base.0=D\:\\Pemrograman Mobile 2\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Dec 30 15:56:14 ICT 2020
+base.0=C\:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

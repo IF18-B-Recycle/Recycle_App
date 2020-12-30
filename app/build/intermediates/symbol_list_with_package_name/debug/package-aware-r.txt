@@ -1931,7 +1931,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewHome
-id recyclerview
+id recyclerview_myOrder
 id reverseSawtooth
 id right
 id right_icon
@@ -2053,11 +2053,15 @@ id txtNoHp
 id txtPassword
 id txtRegister
 id txt_alamat
+id txt_barang
 id txt_idTransaki
-id txt_konfirmasi
+id txt_jumlahBarang
 id txt_nama
+id txt_pengepul
+id txt_proses
+id txt_subTotal
+id txt_tanggalTransaksi
 id txt_tanggal_transaksi
-id txt_totalHarga
 id txtprofile
 id unchecked
 id uniform
