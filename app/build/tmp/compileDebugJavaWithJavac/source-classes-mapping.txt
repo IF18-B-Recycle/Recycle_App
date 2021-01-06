@@ -9,14 +9,13 @@ com/example/recycle_app/Model/ItemData.java
  com.example.recycle_app.Model.ItemData
 com/example/recycle_app/Activity_About_AwalRafiHardika.java
  com.example.recycle_app.Activity_About_AwalRafiHardika
-com/example/recycle_app/Adapter/MyListAdapter.java
- com.example.recycle_app.Adapter.MyListAdapter
-com/example/recycle_app/LoginActivity.java
- com.example.recycle_app.LoginActivity
- com.example.recycle_app.LoginActivity$1
- com.example.recycle_app.LoginActivity$2
- com.example.recycle_app.LoginActivity$3
- com.example.recycle_app.LoginActivity$3$1
+com/example/recycle_app/Adapter/MyOrderAdapter.java
+ com.example.recycle_app.Adapter.MyOrderAdapter
+com/example/recycle_app/Model/ModelMyOrder.java
+ com.example.recycle_app.Model.ModelMyOrder
+com/example/recycle_app/Adapter/HistoryAdapter.java
+ com.example.recycle_app.Adapter.HistoryAdapter
+ com.example.recycle_app.Adapter.HistoryAdapter$MyHolder
 com/example/recycle_app/DetailActivity.java
  com.example.recycle_app.DetailActivity
 com/example/recycle_app/MainActivity.java
@@ -30,13 +29,17 @@ com/example/recycle_app/RegisterActivity.java
  com.example.recycle_app.RegisterActivity$1$1
 com/example/recycle_app/Fragment/HistoryFragment.java
  com.example.recycle_app.Fragment.HistoryFragment
-com/example/recycle_app/Fragment/ProfileFragment.java
- com.example.recycle_app.Fragment.ProfileFragment
- com.example.recycle_app.Fragment.ProfileFragment$1
-com/example/recycle_app/Adapter/MyOrderAdapter.java
- com.example.recycle_app.Adapter.MyOrderAdapter
-com/example/recycle_app/Model/ModelMyOrder.java
- com.example.recycle_app.Model.ModelMyOrder
 com/example/recycle_app/Fragment/MyOrderFragment.java
  com.example.recycle_app.Fragment.MyOrderFragment
  com.example.recycle_app.Fragment.MyOrderFragment$1
+com/example/recycle_app/Fragment/ProfileFragment.java
+ com.example.recycle_app.Fragment.ProfileFragment
+ com.example.recycle_app.Fragment.ProfileFragment$1
+com/example/recycle_app/LoginActivity.java
+ com.example.recycle_app.LoginActivity
+ com.example.recycle_app.LoginActivity$1
+ com.example.recycle_app.LoginActivity$2
+ com.example.recycle_app.LoginActivity$3
+ com.example.recycle_app.LoginActivity$3$1
+com/example/recycle_app/Adapter/MyListAdapter.java
+ com.example.recycle_app.Adapter.MyListAdapter

@@ -1831,6 +1831,7 @@ id group_divider
 id grouping
 id groups
 id hideable
+id history
 id home
 id homeAsUp
 id honorRequest
@@ -1931,6 +1932,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewHome
+id recyclerview
 id recyclerview_myOrder
 id reverseSawtooth
 id right
@@ -2055,12 +2057,15 @@ id txtRegister
 id txt_alamat
 id txt_barang
 id txt_idTransaki
+id txt_idTransaksi
 id txt_jumlahBarang
 id txt_nama
 id txt_pengepul
 id txt_proses
 id txt_subTotal
 id txt_tanggalTransaksi
+id txt_tanggal_jemput
+id txt_tanggal_pesan
 id txt_tanggal_transaksi
 id txtprofile
 id unchecked
@@ -2166,6 +2171,7 @@ layout fragment_history
 layout fragment_home
 layout fragment_my_order
 layout fragment_profile
+layout history
 layout item_myorder
 layout list_item
 layout mtrl_alert_dialog

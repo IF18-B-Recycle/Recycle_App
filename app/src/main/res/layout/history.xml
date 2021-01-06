@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_idTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDC9C9"
+                android:padding="8dp"
+                android:text="0000001"
+                android:textColor="#E31A1A"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_tanggal_pesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_idTransaksi"
+                android:padding="8dp"
+                android:text="18/12/2020"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_tanggal_jemput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_tanggal_pesan"
+                android:padding="8dp"
+                android:text="20/12/2020"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_tanggal_jemput"
+                android:padding="8dp"
+                android:text="Luky Rafi Anuggilarso"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_pengepul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nama"
+                android:padding="8dp"
+                android:text="Toko1"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pengepul"
+                android:padding="8dp"
+                android:text="Kertas"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_jumlahBarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pengepul"
+                android:layout_alignRight="@+id/txt_tanggal_transaksi"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="20 KG"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_jumlahBarang"
+                android:layout_alignRight="@+id/txt_tanggal_transaksi"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="RP. 40.000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_subTotal"
+                android:padding="8dp"
+                android:text="Desa Pekuncen Kec.Pekuncen"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
