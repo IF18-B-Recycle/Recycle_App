@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycle_App">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".ActivityJualBarang"></activity>
+        <activity android:name=".DetailActivity" />
         <activity android:name=".Activity_About_AwalRafiHardika" />
         <activity android:name=".About.Activity_About_LukyRafiAnuggilarso" />
         <activity android:name=".RegisterActivity" />

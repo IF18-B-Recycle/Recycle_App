@@ -30,7 +30,7 @@ public class MyListAdapter extends RecyclerView.ViewHolder {
     }
 
 
-    public void bindToPerusahaan(ItemData itemData){
+    public void bindToToko(ItemData itemData){
         tvNama.setText(itemData.nama_toko);
         tvOwner.setText(itemData.owner);
     }

@@ -1736,6 +1736,7 @@ id bounce
 id btEdit
 id btLogin
 id btRegister
+id btnJualBarang
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -1848,6 +1849,7 @@ id invisible
 id italic
 id item_myorder
 id item_touch_helper_previous_elevation
+id ivImage
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2042,6 +2044,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvOwner
 id tvnamaTempat
 id txtAboutView
 id txtAlamat
@@ -2148,6 +2151,7 @@ layout activity_about_faiz_noval_fajri
 layout activity_about_galih_prasetya_widodo
 layout activity_about_melinia_indah_wardhani
 layout activity_detail
+layout activity_jual_barang
 layout activity_login
 layout activity_main
 layout activity_register

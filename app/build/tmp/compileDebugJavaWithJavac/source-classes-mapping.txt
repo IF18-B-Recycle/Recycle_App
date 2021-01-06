@@ -1,10 +1,13 @@
 com/example/recycle_app/Fragment/HomeFragment.java
  com.example.recycle_app.Fragment.HomeFragment
  com.example.recycle_app.Fragment.HomeFragment$1
+ com.example.recycle_app.Fragment.HomeFragment$1$1
 com/example/recycle_app/Model/Pengguna.java
  com.example.recycle_app.Model.Pengguna
 com/example/recycle_app/About/Activity_About_LukyRafiAnuggilarso.java
  com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso
+com/example/recycle_app/ActivityJualBarang.java
+ com.example.recycle_app.ActivityJualBarang
 com/example/recycle_app/Model/ItemData.java
  com.example.recycle_app.Model.ItemData
 com/example/recycle_app/Activity_About_AwalRafiHardika.java
@@ -18,6 +21,7 @@ com/example/recycle_app/Adapter/HistoryAdapter.java
  com.example.recycle_app.Adapter.HistoryAdapter$MyHolder
 com/example/recycle_app/DetailActivity.java
  com.example.recycle_app.DetailActivity
+ com.example.recycle_app.DetailActivity$1
 com/example/recycle_app/MainActivity.java
  com.example.recycle_app.MainActivity
  com.example.recycle_app.MainActivity$1

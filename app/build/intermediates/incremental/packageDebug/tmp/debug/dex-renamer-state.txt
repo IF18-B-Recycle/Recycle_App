@@ -1,4 +1,4 @@
-#Wed Dec 30 15:56:14 ICT 2020
-base.0=C\:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Jan 06 16:33:33 ICT 2021
+base.0=C\:\\Users\\Awal Rafi Hardika\\Documents\\GitHub\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

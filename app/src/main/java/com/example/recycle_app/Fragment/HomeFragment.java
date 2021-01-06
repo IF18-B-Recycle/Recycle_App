@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.recycle_app.Adapter.MyListAdapter;
+import com.example.recycle_app.DetailActivity;
 import com.example.recycle_app.LoginActivity;
 import com.example.recycle_app.MainActivity;
 import com.example.recycle_app.Model.ItemData;
@@ -70,7 +71,15 @@ public class HomeFragment extends Fragment {
 
             @Override
             protected void onBindViewHolder(@NonNull MyListAdapter holder, int position, @NonNull final ItemData model) {
-                holder.bindToPerusahaan(model);
+                holder.bindToToko(model);
+
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getContext(), DetailActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         };
 
