@@ -22,6 +22,7 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,11 +38,16 @@ public class ActivityJualBarang extends AppCompatActivity {
     Button btnLokasi, btnJual;
 
     FusedLocationProviderClient fusedLocationProviderClient;
+    FirebaseAuth auth;
+
+    public String latitude,longitude;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jual_barang);
+        auth = FirebaseAuth.getInstance();
 
         tvHargaKertas = findViewById(R.id.tvHargaKertas);
         tvHargaPlastik = findViewById(R.id.tvHargaPlastik);
@@ -82,6 +88,7 @@ public class ActivityJualBarang extends AppCompatActivity {
 
     private void DapatkanLokasi() {
         // GET CURRENT LOCATION
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             fusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
                 @Override
@@ -89,6 +96,7 @@ public class ActivityJualBarang extends AppCompatActivity {
                     //initialize location
                     Location location = task.getResult();
                     if (location != null){
+                        String ll;
                         try {
                             //initialize geocoder
                             Geocoder geocoder = new Geocoder(ActivityJualBarang.this, Locale.getDefault());
@@ -97,8 +105,9 @@ public class ActivityJualBarang extends AppCompatActivity {
                             List<Address> addresses = geocoder.getFromLocation(
                                     location.getLatitude(),location.getLongitude(),1
                             );
-                            Toast.makeText(ActivityJualBarang.this, "Lattide" + addresses.get(0).getLatitude(), Toast.LENGTH_SHORT).show();
-                            Toast.makeText(ActivityJualBarang.this, "Longitude" + addresses.get(0).getLongitude(), Toast.LENGTH_SHORT).show();
+                            latitude = String.valueOf(addresses.get(0).getLatitude());
+                            longitude = String.valueOf(addresses.get(0).getLongitude());
+                            Toast.makeText(ActivityJualBarang.this, "Lokasi Berhasil di ambil" , Toast.LENGTH_SHORT).show();
                         }catch (IOException e){
                             e.printStackTrace();
 
@@ -117,7 +126,7 @@ public class ActivityJualBarang extends AppCompatActivity {
 
     private void JualBarang(){
         //Mendapatkan UserID dari pengguna yang Terautentikasi
-        //String getUserID = auth.getCurrentUser().getUid();
+        String getUserID = auth.getCurrentUser().getUid();
 
         //Mendapatkan Instance dari Database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -142,6 +151,26 @@ public class ActivityJualBarang extends AppCompatActivity {
         String getAlamat = etAlamat.getText().toString();
         String getNoHp = etNoHp.getText().toString();
 
+        String getProses = "Dalam_proses";
+        Integer HargaKertas = Integer.parseInt(getHargaKertas);
+        Integer Hargaplastik = Integer.parseInt(getHargaPlastik);
+        Integer HargaLogam = Integer.parseInt(getHargaLogam);
+        Integer HargaKaca = Integer.parseInt(getHargaKaca);
+        Integer HargaAlmu = Integer.parseInt(getHargaAlmu);
+        Integer HargaKardus = Integer.parseInt(getHargaKardus);
+
+        Integer JumlahKertas = Integer.parseInt(getJumlahKertas);
+        Integer JumlahPlastik = Integer.parseInt(getJumlahPlastik);
+        Integer JumlahLogam = Integer.parseInt(getJumlahLogam);
+        Integer JumlahKaca = Integer.parseInt(getJumlahKaca);
+        Integer JumlahAlmu = Integer.parseInt(getJumlahAlmu);
+        Integer JumlahKardus = Integer.parseInt(getJumlahKardus);
+
+        Integer total = ((HargaKertas*JumlahKertas)+(Hargaplastik*JumlahPlastik)+(HargaLogam*JumlahLogam)+(HargaKaca*JumlahKaca)+(HargaAlmu*JumlahAlmu)+(HargaKardus*JumlahKardus));
+        String getSubtotal = total.toString();
+
+        String getLongitude = longitude;
+        String getLatitude = latitude;
 
         getReference = database.getReference(); // Mendapatkan Referensi dari Database
 /*
@@ -154,13 +183,15 @@ public class ActivityJualBarang extends AppCompatActivity {
         Jika Tidak, maka data dapat diproses dan meyimpannya pada Database
         Menyimpan data referensi pada Database berdasarkan User ID dari masing-masing Akun
         */
-        getReference.child("Transaksi").push()
-                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp))
+        getReference.child("Transaksi").child(getUserID).push()
+                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp,getProses,getSubtotal,getLongitude,getLatitude))
                 .addOnSuccessListener(this, new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         //Peristiwa ini terjadi saat user berhasil menyimpan datanya kedalam Database
                         Toast.makeText(ActivityJualBarang.this, "Data Tersimpan", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ActivityJualBarang.this, getSubtotal.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ActivityJualBarang.this, getProses, Toast.LENGTH_SHORT).show();
                     }
                 });
 

@@ -2,13 +2,13 @@ package com.example.recycle_app.Model;
 
 public class ModelJualBarang {
     private String HargaKertas, HargaPlastik, HargaLogam, HargaKaca, HargaAlmu, HargaKardus, JumlahKertas, JumlahPlastik, JumlahLogam, JumlahKaca, JumlahAlmu, JumlahKerdus;
-    private String Nama, Alamat, NoHp;
+    private String Nama, Alamat, NoHp, Subtotal,Proses,Longitude,Latitude;
     private String Key;
 
     public ModelJualBarang() {
     }
 
-    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp) {
+    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude) {
         HargaKertas = hargaKertas;
         HargaPlastik = hargaPlastik;
         HargaLogam = hargaLogam;
@@ -24,6 +24,10 @@ public class ModelJualBarang {
         Nama = nama;
         Alamat = alamat;
         NoHp = noHp;
+        Subtotal = subtotal;
+        Proses = proses;
+        Longitude = longitude;
+        Latitude = latitude;
     }
 
     public String getHargaKertas() {
@@ -144,6 +148,38 @@ public class ModelJualBarang {
 
     public void setNoHp(String noHp) {
         NoHp = noHp;
+    }
+
+    public String getSubtotal() {
+        return Subtotal;
+    }
+
+    public void setSubtotal(String subtotal) {
+        Subtotal = subtotal;
+    }
+
+    public String getProses() {
+        return Proses;
+    }
+
+    public void setProses(String proses) {
+        Proses = proses;
+    }
+
+    public String getLongitude() {
+        return Longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        Longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return Latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        Latitude = latitude;
     }
 
     public String getKey() {
