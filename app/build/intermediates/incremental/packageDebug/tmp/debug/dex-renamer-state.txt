@@ -1,4 +1,4 @@
-#Wed Jan 06 16:33:33 ICT 2021
-base.0=C\:\\Users\\Awal Rafi Hardika\\Documents\\GitHub\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Jan 12 13:35:40 ICT 2021
+base.0=D\:\\Pemrograman Mobile 2\\Recycle_App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

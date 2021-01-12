@@ -9,186 +9,9 @@
     android:orientation="vertical"
     android:padding="8dp">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jual Barang"
-        android:textSize="40dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. Kertas"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:inputType="number"
-                android:textSize="20dp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2. Plastik"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:textSize="20dp"
-                android:inputType="number"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3. Logam"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:textSize="20dp"
-                android:inputType="number"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4. Botol Kaca"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:textSize="20dp"
-                android:inputType="number"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5. Almunium"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:textSize="20dp"
-                android:inputType="number"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6. Kardus"
-                android:textSize="20dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp. 1000/kg"
-                android:textSize="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Jumlah"
-                android:textSize="20dp"
-                android:inputType="number"/>
-
-        </LinearLayout>
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -197,42 +20,347 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama"
-                android:textSize="30dp"/>
+                android:text="Jual Barang"
+                android:textSize="40dp"/>
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="masukan nama"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alamat"
-                android:textSize="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="masukan alamat" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Kertas"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="No.HP"
-                android:textSize="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="masukan no hp/telepon"
-                android:inputType="phone"/>
+                    <TextView
+                        android:id="@+id/tvHargaKertas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Jual Barang"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
 
+                    <EditText
+                        android:id="@+id/etJumlahKertas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:inputType="number"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Plastik"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvHargaPlastik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <EditText
+                        android:id="@+id/etJumlahPlastik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:textSize="20dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. Logam"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvHargaLogam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <EditText
+                        android:id="@+id/etJumlahLogam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:textSize="20dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Botol Kaca"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvHargaKaca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <EditText
+                        android:id="@+id/etJumlahKaca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:textSize="20dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Almunium"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvHargaAlmu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <EditText
+                        android:id="@+id/etJumlahAlmu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:textSize="20dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. Kardus"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvHargaKardus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="/Kg"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <EditText
+                        android:id="@+id/etJumlahKardus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Jumlah"
+                        android:textSize="20dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:id="@+id/etNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="masukan nama"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:id="@+id/etAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="masukan alamat" />
+
+                    <Button
+                        android:id="@+id/btnLokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dapatkan Lokasi"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No.HP"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:id="@+id/etNoHp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="masukan no hp/telepon"
+                        android:inputType="phone"/>
+
+                    <Button
+                        android:id="@+id/btnJual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jual Barang"/>
+
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
