@@ -2032,6 +2032,7 @@ id textView3
 id textView4
 id text_input_end_icon
 id text_input_start_icon
+id text_subTotal
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2056,6 +2057,8 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvHargaAlmu
+id tvHargaAluminium
+id tvHargaBotolKaca
 id tvHargaKaca
 id tvHargaKardus
 id tvHargaKertas
@@ -2074,16 +2077,16 @@ id txtNama
 id txtNoHp
 id txtPassword
 id txtRegister
+id txt_Rp
 id txt_alamat
 id txt_barang
-id txt_idTransaki
 id txt_idTransaksi
 id txt_jumlahBarang
 id txt_nama
+id txt_noHp
 id txt_pengepul
 id txt_proses
 id txt_subTotal
-id txt_tanggalTransaksi
 id txt_tanggal_jemput
 id txt_tanggal_pesan
 id txt_tanggal_transaksi

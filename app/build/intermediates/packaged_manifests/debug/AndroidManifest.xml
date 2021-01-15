@@ -30,13 +30,14 @@
         <activity android:name="com.example.recycle_app.Activity_About_AwalRafiHardika" />
         <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
         <activity android:name="com.example.recycle_app.RegisterActivity" />
-        <activity android:name="com.example.recycle_app.MainActivity" />
-        <activity android:name="com.example.recycle_app.LoginActivity" >
+        <activity android:name="com.example.recycle_app.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.recycle_app.LoginActivity" >
         </activity>
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"

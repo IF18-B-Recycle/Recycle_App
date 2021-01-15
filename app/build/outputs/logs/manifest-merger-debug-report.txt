@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f65e7d690d0436991c66205f0487ed30\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -69,20 +69,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\LENOVO\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1f88a34bd3df3bc12fd8542ddf50c1fa\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\55b73ed8661a8bc109a236a63617686e\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\57b5ae7b4c1e8222c5e1793edd39aefa\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:2:11-69
@@ -115,7 +115,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:
 	android:name
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:9:5-29:19
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:9:5-31:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -199,23 +199,23 @@ ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:19-51
 activity#com.example.recycle_app.MainActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:21:9-50
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:21:19-47
-activity#com.example.recycle_app.LoginActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:22:9-28:20
-	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:22:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:25:27-74
+activity#com.example.recycle_app.LoginActivity
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:28:9-30:20
+	android:name
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:28:19-48
 uses-sdk
 INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml

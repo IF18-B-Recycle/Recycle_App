@@ -18,30 +18,22 @@ import java.util.ArrayList;
 
 public class MyOrderAdapter extends RecyclerView.ViewHolder {
 
-    public TextView proses, id_transaksi, id_pengguna, id_pengepul,nama_barang, jumlah_barang, sub_total, tanggal, alamat;
+    public TextView txt_proses, txt_nama, txt_alamat, txt_noHp,txt_subTotal;
 
     public MyOrderAdapter(@NonNull View itemView) {
         super(itemView);
-        proses = itemView.findViewById(R.id.txt_proses);
-        id_transaksi = itemView.findViewById(R.id.txt_idTransaki);
-        id_pengguna = itemView.findViewById(R.id.txt_nama);
-        id_pengepul = itemView.findViewById(R.id.txt_pengepul);
-        nama_barang = itemView.findViewById(R.id.txt_barang);
-        jumlah_barang = itemView.findViewById(R.id.txt_jumlahBarang);
-        sub_total = itemView.findViewById(R.id.txt_subTotal);
-        tanggal = itemView.findViewById(R.id.txt_tanggalTransaksi);
-        alamat = itemView.findViewById(R.id.txt_alamat);
+        txt_proses = itemView.findViewById(R.id.txt_proses);
+        txt_nama = itemView.findViewById(R.id.txt_nama);
+        txt_alamat = itemView.findViewById(R.id.txt_alamat);
+        txt_noHp = itemView.findViewById(R.id.txt_noHp);
+        txt_subTotal = itemView.findViewById(R.id.txt_subTotal);
     }
 
     public void bindtoItemOrder(ModelMyOrder modelMyOrder){
-        proses.setText(modelMyOrder.proses);
-        id_transaksi.setText(modelMyOrder.id_transaksi);
-        id_pengguna.setText(modelMyOrder.id_pengguna);
-        id_pengepul.setText(modelMyOrder.id_pengepul);
-        nama_barang.setText(modelMyOrder.nama_barang);
-        jumlah_barang.setText(modelMyOrder.jumlah_barang);
-        sub_total.setText(modelMyOrder.sub_total);
-        tanggal.setText(modelMyOrder.tanggal);
-        alamat.setText(modelMyOrder.alamat);
+        txt_proses.setText(modelMyOrder.proses);
+        txt_nama.setText(modelMyOrder.nama);
+        txt_alamat.setText(modelMyOrder.alamat);
+        txt_noHp.setText(modelMyOrder.noHp);
+        txt_subTotal.setText(modelMyOrder.subtotal);
     }
-    }
+}

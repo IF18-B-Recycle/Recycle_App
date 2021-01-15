@@ -30,83 +30,61 @@
 
 
             <TextView
-                android:id="@+id/txt_tanggalTransaksi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_proses"
-                android:padding="8dp"
-                android:text="18/12/2020"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txt_idTransaki"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_proses"
-                android:layout_alignRight="@+id/txt_tanggal_transaksi"
-                android:layout_alignParentRight="true"
-                android:padding="8dp"
-                android:text="0000001"
-                android:textSize="14sp" />
-
-            <TextView
                 android:id="@+id/txt_nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_tanggalTransaksi"
+                android:layout_below="@+id/txt_proses"
                 android:padding="8dp"
                 android:text="Luky Rafi Anuggilarso"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txt_pengepul"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:padding="8dp"
-                android:text="Toko1"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txt_barang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_pengepul"
-                android:padding="8dp"
-                android:text="Kertas"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txt_jumlahBarang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_pengepul"
-                android:layout_alignRight="@+id/txt_tanggal_transaksi"
-                android:layout_alignParentRight="true"
-                android:padding="8dp"
-                android:text="20 KG"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txt_subTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_jumlahBarang"
-                android:layout_alignRight="@+id/txt_tanggal_transaksi"
-                android:layout_alignParentRight="true"
-                android:padding="8dp"
-                android:text="RP. 40.000"
                 android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/txt_alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_subTotal"
+                android:layout_below="@+id/txt_nama"
                 android:padding="8dp"
-                android:text="Desa Pekuncen Kec.Pekuncen"
+                android:text="Pekuncen RT 6 RW 9"
                 android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/txt_noHp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_alamat"
+                android:padding="8dp"
+                android:text="08123123081"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/text_subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_noHp"
+                android:padding="8dp"
+                android:text="Sub Total"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_Rp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_noHp"
+                android:layout_toLeftOf="@+id/txt_subTotal"
+                android:padding="8dp"
+                android:text="Rp."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_noHp"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="20000"
+                android:textSize="14sp" />
 
 
         </RelativeLayout>

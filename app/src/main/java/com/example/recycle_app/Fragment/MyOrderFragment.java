@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.recycle_app.Adapter.MyListAdapter;
 import com.example.recycle_app.Adapter.MyOrderAdapter;
@@ -21,6 +22,7 @@ import com.example.recycle_app.Model.ModelMyOrder;
 import com.example.recycle_app.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -36,12 +38,19 @@ public class MyOrderFragment extends Fragment {
     private FirebaseRecyclerAdapter<ModelMyOrder, MyOrderAdapter> mAdapter;
     private RecyclerView mRecyclerView;
 
+    FirebaseAuth auth;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_my_order, container, false);
+
+        //Untuk atuhentikasi user yang login
+        auth = FirebaseAuth.getInstance();
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -98,7 +107,8 @@ public class MyOrderFragment extends Fragment {
     }
 
     private Query getQuery(DatabaseReference mDatabase){
-        Query query = mDatabase.child("Transaksi");
+        String getUserID = auth.getCurrentUser().getUid();
+        Query query = mDatabase.child("Transaksi").child(getUserID);
         return query;
     }
 

@@ -5,26 +5,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.recycle_app.Adapter.MyOrderAdapter;
+import com.example.recycle_app.Model.ModelHargaBarang;
 import com.example.recycle_app.Model.ModelJualBarang;
+import com.example.recycle_app.Model.ModelMyOrder;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import java.io.IOException;
 import java.util.List;
@@ -37,8 +50,12 @@ public class ActivityJualBarang extends AppCompatActivity {
     EditText etNama, etAlamat, etNoHp;
     Button btnLokasi, btnJual;
 
+
     FusedLocationProviderClient fusedLocationProviderClient;
     FirebaseAuth auth;
+
+    private FirebaseDatabase getDatabase;
+    private DatabaseReference getRefenence;
 
     public String latitude,longitude;
 
@@ -67,6 +84,10 @@ public class ActivityJualBarang extends AppCompatActivity {
         etAlamat = findViewById(R.id.etAlamat);
         etNoHp = findViewById(R.id.etNoHp);
 
+        getDatabase = FirebaseDatabase.getInstance();
+        getRefenence = getDatabase.getReference();
+        getdata();
+
         btnJual = findViewById(R.id.btnJual);
         btnJual.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +106,47 @@ public class ActivityJualBarang extends AppCompatActivity {
         });
 
     }
+
+    private void getdata() {
+
+        getRefenence.child("Barang").addChildEventListener(new ChildEventListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                //Mengambil daftar item dari database, setiap kali ada turunannya
+                ModelHargaBarang hargaBarang = dataSnapshot.getValue(ModelHargaBarang.class);
+                tvHargaAlmu.setText(hargaBarang.getHarga_aluminium());
+                tvHargaKaca.setText(hargaBarang.getHarga_botol_kaca());
+                tvHargaKardus.setText(hargaBarang.getHarga_kerdus());
+                tvHargaKertas.setText(hargaBarang.getHarga_kertas());
+                tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
+                tvHargaLogam.setText(hargaBarang.getHarga_logam());
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                //......
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                //......
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                //.....
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //Digunakan untuk menangani kejadian Error
+                Log.e("MyListData", "Error: ", databaseError.toException());
+            }
+        });
+    }
+
+
 
     private void DapatkanLokasi() {
         // GET CURRENT LOCATION
@@ -151,7 +213,6 @@ public class ActivityJualBarang extends AppCompatActivity {
         String getAlamat = etAlamat.getText().toString();
         String getNoHp = etNoHp.getText().toString();
 
-        String getProses = "Dalam_proses";
         Integer HargaKertas = Integer.parseInt(getHargaKertas);
         Integer Hargaplastik = Integer.parseInt(getHargaPlastik);
         Integer HargaLogam = Integer.parseInt(getHargaLogam);
@@ -169,6 +230,8 @@ public class ActivityJualBarang extends AppCompatActivity {
         Integer total = ((HargaKertas*JumlahKertas)+(Hargaplastik*JumlahPlastik)+(HargaLogam*JumlahLogam)+(HargaKaca*JumlahKaca)+(HargaAlmu*JumlahAlmu)+(HargaKardus*JumlahKardus));
         String getSubtotal = total.toString();
 
+        String getProses = "dalam_proses";
+
         String getLongitude = longitude;
         String getLatitude = latitude;
 
@@ -184,14 +247,12 @@ public class ActivityJualBarang extends AppCompatActivity {
         Menyimpan data referensi pada Database berdasarkan User ID dari masing-masing Akun
         */
         getReference.child("Transaksi").child(getUserID).push()
-                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp,getProses,getSubtotal,getLongitude,getLatitude))
+                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp,getSubtotal,getProses,getLongitude,getLatitude))
                 .addOnSuccessListener(this, new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         //Peristiwa ini terjadi saat user berhasil menyimpan datanya kedalam Database
                         Toast.makeText(ActivityJualBarang.this, "Data Tersimpan", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ActivityJualBarang.this, getSubtotal.toString(), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ActivityJualBarang.this, getProses, Toast.LENGTH_SHORT).show();
                     }
                 });
 

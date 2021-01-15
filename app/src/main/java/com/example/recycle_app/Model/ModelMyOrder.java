@@ -6,43 +6,56 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModelMyOrder {
-    public String proses;
-    public String id_transaksi;
-    public String id_pengguna;
-    public String id_pengepul;
-    public String nama_barang;
-    public String jumlah_barang;
-    public String sub_total;
-    public String tanggal;
-    public String alamat;
+    public String hargaKertas, hargaPlastik, hargaLogam, hargaKaca, hargaAlmu, hargaKardus, jumlahKertas, jumlahPlastik, jumlahLogam, jumlahKaca, jumlahAlmu, jumlahKerdus;
+    public String nama, alamat, noHp, subtotal,proses,longitude,latitude;
 
     public ModelMyOrder() {
     }
 
-    public ModelMyOrder(String proses, String id_transaksi, String id_pengguna, String id_pengepul, String nama_barang, String jumlah_barang, String sub_total, String tanggal, String alamat) {
-        this.proses = proses;
-        this.id_transaksi = id_transaksi;
-        this.id_pengguna = id_pengguna;
-        this.id_pengepul = id_pengepul;
-        this.nama_barang = nama_barang;
-        this.jumlah_barang = jumlah_barang;
-        this.sub_total = sub_total;
-        this.tanggal = tanggal;
+    public ModelMyOrder(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude) {
+        this.hargaKertas = hargaKertas;
+        this.hargaPlastik = hargaPlastik;
+        this.hargaLogam = hargaLogam;
+        this.hargaKaca = hargaKaca;
+        this.hargaAlmu = hargaAlmu;
+        this.hargaKardus = hargaKardus;
+        this.jumlahKertas = jumlahKertas;
+        this.jumlahPlastik = jumlahPlastik;
+        this.jumlahLogam = jumlahLogam;
+        this.jumlahKaca = jumlahKaca;
+        this.jumlahAlmu = jumlahAlmu;
+        this.jumlahKerdus = jumlahKerdus;
+        this.nama = nama;
         this.alamat = alamat;
+        this.noHp = noHp;
+        this.subtotal = subtotal;
+        this.proses = proses;
+        this.longitude = longitude;
+        this.latitude = latitude;
     }
 
     @Exclude
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
         result.put("proses", proses);
-        result.put("id_transaksi", id_transaksi);
-        result.put("id_pengguna", id_pengguna);
-        result.put("id_pengepul", id_pengepul);
-        result.put("nama_barang", nama_barang);
-        result.put("jumlah_barang", jumlah_barang);
-        result.put("sub_total", sub_total);
-        result.put("tanggal", tanggal);
-        result.put("alamat", alamat);
+        result.put("hargaKertas", hargaKertas);
+        result.put("hargaLogam", hargaLogam);
+        result.put("hargaPlastik",hargaPlastik);
+        result.put("hargaKaca",hargaKaca);
+        result.put("hargaAlmu",hargaAlmu);
+        result.put("hargaKardus",hargaKardus);
+        result.put("jumlahKertas",jumlahKertas);
+        result.put("jumlahLogam",jumlahLogam);
+        result.put("jumlahPlastik",jumlahPlastik);
+        result.put("jumlahKaca",jumlahKaca);
+        result.put("jumlahAlmu",jumlahAlmu);
+        result.put("jumlahKardus",jumlahKerdus);
+        result.put("nama",nama);
+        result.put("alamat",alamat);
+        result.put("longitude",longitude);
+        result.put("latitude",latitude);
+        result.put("noHp",noHp);
+        result.put("subtotal",subtotal);
         return result;
     }
 }

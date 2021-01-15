@@ -95,10 +95,28 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaKertas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
+
 
                     </LinearLayout>
                     <LinearLayout
@@ -116,8 +134,25 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaPlastik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
 
@@ -137,8 +172,25 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaLogam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
 
@@ -158,10 +210,28 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaBotolKaca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
+
 
                     </LinearLayout>
                     <LinearLayout
@@ -179,10 +249,28 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaAluminium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
+
 
                     </LinearLayout>
                     <LinearLayout
@@ -200,10 +288,28 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 1000/kg"
-                            android:textSize="25dp"
+                            android:text="Rp. "
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaKardus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="/Kg"
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="20dp" />
+
 
                     </LinearLayout>
                 </LinearLayout>
