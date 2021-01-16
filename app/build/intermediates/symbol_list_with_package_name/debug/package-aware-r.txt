@@ -2203,6 +2203,7 @@ layout activity_jual_barang
 layout activity_login
 layout activity_main
 layout activity_maps
+layout activity_pengepul_main
 layout activity_register
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2223,6 +2224,9 @@ layout design_text_input_start_icon
 layout fragment_history
 layout fragment_home
 layout fragment_my_order
+layout fragment_pengepul_barang
+layout fragment_pengepul_home
+layout fragment_pengepul_profile
 layout fragment_profile
 layout history
 layout item_myorder
@@ -2289,6 +2293,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_navigation
+menu pengepul_bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

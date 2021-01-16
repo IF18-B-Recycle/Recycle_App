@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity_About_AwalRafiHardika">
+    tools:context=".About.Activity_About_AwalRafiHardika">
 
     <ImageView
         android:layout_width="match_parent"

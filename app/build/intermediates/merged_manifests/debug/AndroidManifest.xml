@@ -7,7 +7,6 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -35,7 +34,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Recycle_App" >
+        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -49,21 +54,16 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example.recycle_app.MapsActivity"
+            android:name="com.example.recycle_app.User.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="com.example.recycle_app.ActivityJualBarang" />
-        <activity android:name="com.example.recycle_app.DetailActivity" />
-        <activity android:name="com.example.recycle_app.Activity_About_AwalRafiHardika" />
+        <activity android:name="com.example.recycle_app.User.ActivityJualBarang" />
+        <activity android:name="com.example.recycle_app.User.DetailActivity" />
+        <activity android:name="com.example.recycle_app.About.Activity_About_AwalRafiHardika" />
         <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
-        <activity android:name="com.example.recycle_app.RegisterActivity" />
-        <activity android:name="com.example.recycle_app.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.example.recycle_app.User.RegisterActivity" />
+        <activity android:name="com.example.recycle_app.User.MainActivity" />
+        <activity android:name="com.example.recycle_app.User.LoginActivity" >
         </activity>
-        <activity android:name="com.example.recycle_app.LoginActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

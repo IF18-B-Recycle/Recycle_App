@@ -959,21 +959,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\a662a09f936ef9769e962d90fad0478e\\material-1.2.1\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,170,226,293,358,413,478,547",
-                        "endColumns": "58,55,55,66,64,54,64,68,68",
-                        "endOffsets": "109,165,221,288,353,408,473,542,611"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\values-ca_values-ca.arsc.flat",
             "map": [
                 {
@@ -1042,6 +1027,21 @@
                         "startOffsets": "2830,2937,3121,3250,3361,3570,3699,3852,4183,4413,4524,4714,4847,5070,5258,5353,5451",
                         "endColumns": "106,183,128,110,208,128,152,136,229,110,189,132,222,187,94,97,115",
                         "endOffsets": "2932,3116,3245,3356,3565,3694,3847,3984,4408,4519,4709,4842,5065,5253,5348,5446,5562"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\a662a09f936ef9769e962d90fad0478e\\material-1.2.1\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,226,293,358,413,478,547",
+                        "endColumns": "58,55,55,66,64,54,64,68,68",
+                        "endOffsets": "109,165,221,288,353,408,473,542,611"
                     }
                 }
             ]
