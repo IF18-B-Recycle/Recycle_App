@@ -34,13 +34,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Recycle_App" >
-        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" >
+        <activity android:name="com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -62,8 +63,7 @@
         <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
         <activity android:name="com.example.recycle_app.User.RegisterActivity" />
         <activity android:name="com.example.recycle_app.User.MainActivity" />
-        <activity android:name="com.example.recycle_app.User.LoginActivity" >
-        </activity>
+        <activity android:name="com.example.recycle_app.User.LoginActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

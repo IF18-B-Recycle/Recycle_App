@@ -59,9 +59,9 @@
 35        android:testOnly="true"
 36        android:theme="@style/Theme.Recycle_App" >
 36-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:19:9-49
-37        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" >
+37        <activity android:name="com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity" >
 37-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:9-26:20
-37-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:19-64
+37-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:19-85
 38            <intent-filter>
 38-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:21:13-25:29
 39                <action android:name="android.intent.action.MAIN" />
@@ -73,49 +73,51 @@
 41-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:24:27-74
 42            </intent-filter>
 43        </activity>
-44        <!--
-45             The API key for Google Maps-based APIs is defined as a string resource.
-46             (See the file "res/values/google_maps_api.xml").
-47             Note that the API key is linked to the encryption key used to sign the APK.
-48             You need a different API key for each encryption key, including the release key that is used to
-49             sign the APK for publishing.
-50             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-51        -->
-52        <meta-data
-52-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:35:9-37:55
-53            android:name="com.google.android.geo.API_KEY"
-53-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:36:13-58
-54            android:value="@string/google_maps_key" />
-54-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-52
-55
-56        <activity
-56-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:39:9-41:59
-57            android:name="com.example.recycle_app.User.MapsActivity"
-57-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:40:13-46
-58            android:label="@string/title_activity_maps" />
-58-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:41:13-56
-59        <activity android:name="com.example.recycle_app.User.ActivityJualBarang" />
-59-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:9-61
-59-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:19-58
-60        <activity android:name="com.example.recycle_app.User.DetailActivity" />
-60-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:9-57
-60-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:19-54
-61        <activity android:name="com.example.recycle_app.About.Activity_About_AwalRafiHardika" />
-61-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:9-74
-61-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:19-71
-62        <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
-62-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:9-78
-62-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:19-75
-63        <activity android:name="com.example.recycle_app.User.RegisterActivity" />
-63-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:9-59
-63-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:19-56
-64        <activity android:name="com.example.recycle_app.User.MainActivity" />
-64-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:9-64
-64-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:19-52
-65        <activity android:name="com.example.recycle_app.User.LoginActivity" >
-65-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:9-49:20
-65-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:19-53
-66        </activity>
+44        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" />
+44-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:27:9-76
+44-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:27:19-64
+45        <!--
+46             The API key for Google Maps-based APIs is defined as a string resource.
+47             (See the file "res/values/google_maps_api.xml").
+48             Note that the API key is linked to the encryption key used to sign the APK.
+49             You need a different API key for each encryption key, including the release key that is used to
+50             sign the APK for publishing.
+51             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+52        -->
+53        <meta-data
+53-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:36:9-38:55
+54            android:name="com.google.android.geo.API_KEY"
+54-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-58
+55            android:value="@string/google_maps_key" />
+55-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:38:13-52
+56
+57        <activity
+57-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:40:9-42:59
+58            android:name="com.example.recycle_app.User.MapsActivity"
+58-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:41:13-46
+59            android:label="@string/title_activity_maps" />
+59-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:13-56
+60        <activity android:name="com.example.recycle_app.User.ActivityJualBarang" />
+60-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:9-61
+60-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:19-58
+61        <activity android:name="com.example.recycle_app.User.DetailActivity" />
+61-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:9-57
+61-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:19-54
+62        <activity android:name="com.example.recycle_app.About.Activity_About_AwalRafiHardika" />
+62-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:9-74
+62-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:19-71
+63        <activity android:name="com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso" />
+63-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:9-78
+63-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:19-75
+64        <activity android:name="com.example.recycle_app.User.RegisterActivity" />
+64-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:9-59
+64-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:19-56
+65        <activity android:name="com.example.recycle_app.User.MainActivity" />
+65-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:9-55
+65-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:19-52
+66        <activity android:name="com.example.recycle_app.User.LoginActivity" />
+66-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:49:9-65
+66-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:49:19-53
 67        <activity
 67-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
 68            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

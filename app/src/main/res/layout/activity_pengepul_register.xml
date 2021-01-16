@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pengepul.PengepulFragment.PengepulRegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Pengepul"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_below="@id/txtRegister"
+                android:id="@+id/txtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="First Name"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFirstName"
+                android:background="@drawable/backround_edittext"
+                android:hint="Fist Name"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFirstName"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Last Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLastName"
+                android:background="@drawable/backround_edittext"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtNamaToko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLastName"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Nama Toko"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etNamaToko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNamaToko"
+                android:background="@drawable/backround_edittext"
+                android:hint="Nama Toko"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etNamaToko"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Email"
+                android:textSize="20sp" />
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmail"
+                android:background="@drawable/backround_edittext"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etEmail"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Password"
+                android:textSize="20sp" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPassword"
+                android:background="@drawable/backround_edittext"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:background="@drawable/background_button"
+                android:id="@+id/btRegister"
+                android:layout_below="@id/etPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="REGISTER" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

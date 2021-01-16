@@ -31,6 +31,10 @@ com/example/recycle_app/User/Adapter/HargaBarangAdapter.java
  com.example.recycle_app.User.Adapter.HargaBarangAdapter
 com/example/recycle_app/About/Activity_About_LukyRafiAnuggilarso.java
  com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso
+com/example/recycle_app/User/MapsActivity.java
+ com.example.recycle_app.User.MapsActivity
+com/example/recycle_app/User/Model/ModelMyOrder.java
+ com.example.recycle_app.User.Model.ModelMyOrder
 com/example/recycle_app/User/Model/ItemData.java
  com.example.recycle_app.User.Model.ItemData
 com/example/recycle_app/User/Fragment/MyOrderFragment.java
@@ -68,7 +72,9 @@ com/example/recycle_app/User/RegisterActivity.java
  com.example.recycle_app.User.RegisterActivity$1$1
 com/example/recycle_app/User/Adapter/MyOrderAdapter.java
  com.example.recycle_app.User.Adapter.MyOrderAdapter
-com/example/recycle_app/User/Model/ModelMyOrder.java
- com.example.recycle_app.User.Model.ModelMyOrder
-com/example/recycle_app/User/MapsActivity.java
- com.example.recycle_app.User.MapsActivity
+com/example/recycle_app/Pengepul/Model/Pengepul.java
+ com.example.recycle_app.Pengepul.Model.Pengepul
+com/example/recycle_app/Pengepul/PengepulFragment/PengepulRegisterActivity.java
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity$1
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity$1$1

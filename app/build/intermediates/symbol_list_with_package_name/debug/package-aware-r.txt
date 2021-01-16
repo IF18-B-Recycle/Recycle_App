@@ -1840,6 +1840,7 @@ id etJumlahLogam
 id etJumlahPlastik
 id etLastName
 id etNama
+id etNamaToko
 id etNoHp
 id etPassword
 id exitUntilCollapsed
@@ -2103,6 +2104,7 @@ id txtEmail
 id txtFirstName
 id txtLastName
 id txtLogin
+id txtNamaToko
 id txtPassword
 id txtRegister
 id txt_Rp
@@ -2204,6 +2206,7 @@ layout activity_login
 layout activity_main
 layout activity_maps
 layout activity_pengepul_main
+layout activity_pengepul_register
 layout activity_register
 layout custom_dialog
 layout design_bottom_navigation_item

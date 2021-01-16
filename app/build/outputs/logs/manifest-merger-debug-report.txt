@@ -183,10 +183,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\LE
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:19:9-49
-activity#com.example.recycle_app.Pengepul.PengepulMainActivity
+activity#com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity
 ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:19-64
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:20:19-85
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
@@ -197,46 +197,50 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:24:27-74
+activity#com.example.recycle_app.Pengepul.PengepulMainActivity
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:27:9-76
+	android:name
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:27:19-64
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:35:9-37:55
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:36:9-38:55
 	android:value
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-52
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:38:13-52
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:36:13-58
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-58
 activity#com.example.recycle_app.User.MapsActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:39:9-41:59
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:40:9-42:59
 	android:label
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:41:13-56
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:40:13-46
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:41:13-46
 activity#com.example.recycle_app.User.ActivityJualBarang
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:9-61
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:9-61
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:42:19-58
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:19-58
 activity#com.example.recycle_app.User.DetailActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:9-57
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:9-57
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:43:19-54
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:19-54
 activity#com.example.recycle_app.About.Activity_About_AwalRafiHardika
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:9-74
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:9-74
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:44:19-71
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:19-71
 activity#com.example.recycle_app.About.Activity_About_LukyRafiAnuggilarso
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:9-78
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:9-78
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:45:19-75
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:19-75
 activity#com.example.recycle_app.User.RegisterActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:9-59
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:9-59
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:46:19-56
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:19-56
 activity#com.example.recycle_app.User.MainActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:9-64
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:9-55
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:47:19-52
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:19-52
 activity#com.example.recycle_app.User.LoginActivity
-ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:9-49:20
+ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:49:9-65
 	android:name
-		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:48:19-53
+		ADDED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:49:19-53
 uses-sdk
 INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml
