@@ -7,12 +7,12 @@ import java.util.Map;
 
 public class ModelMyOrder {
     public String hargaKertas, hargaPlastik, hargaLogam, hargaKaca, hargaAlmu, hargaKardus, jumlahKertas, jumlahPlastik, jumlahLogam, jumlahKaca, jumlahAlmu, jumlahKerdus;
-    public String nama, alamat, noHp, subtotal,proses,longitude,latitude;
+    public String nama, alamat, noHp, subtotal,proses,longitude,latitude,key;
 
     public ModelMyOrder() {
     }
 
-    public ModelMyOrder(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude) {
+    public ModelMyOrder(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude, String key) {
         this.hargaKertas = hargaKertas;
         this.hargaPlastik = hargaPlastik;
         this.hargaLogam = hargaLogam;
@@ -32,6 +32,7 @@ public class ModelMyOrder {
         this.proses = proses;
         this.longitude = longitude;
         this.latitude = latitude;
+        this.key = key;
     }
 
     @Exclude
@@ -56,6 +57,7 @@ public class ModelMyOrder {
         result.put("latitude",latitude);
         result.put("noHp",noHp);
         result.put("subtotal",subtotal);
+        result.put("key",key);
         return result;
     }
 }

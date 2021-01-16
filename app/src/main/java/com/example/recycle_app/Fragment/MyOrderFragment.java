@@ -10,22 +10,31 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.recycle_app.ActivityJualBarang;
 import com.example.recycle_app.Adapter.MyListAdapter;
 import com.example.recycle_app.Adapter.MyOrderAdapter;
+import com.example.recycle_app.DetailActivity;
+import com.example.recycle_app.MainActivity;
 import com.example.recycle_app.Model.ItemData;
+import com.example.recycle_app.Model.ModelJualBarang;
 import com.example.recycle_app.Model.ModelMyOrder;
 import com.example.recycle_app.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -39,7 +48,6 @@ public class MyOrderFragment extends Fragment {
     private RecyclerView mRecyclerView;
 
     FirebaseAuth auth;
-
 
 
     @Override
@@ -57,7 +65,7 @@ public class MyOrderFragment extends Fragment {
         mRecyclerView = view.findViewById(R.id.recyclerview_myOrder);
         mRecyclerView.setHasFixedSize(true);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),1);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 1);
         mRecyclerView.setLayoutManager(gridLayoutManager);
         getdata();
         return view;
@@ -82,9 +90,14 @@ public class MyOrderFragment extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull MyOrderAdapter holder, int position, @NonNull final ModelMyOrder model) {
                 holder.bindtoItemOrder(model);
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        hapusdata(model);
+                    }
+                });
             }
         };
-
         mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);
     }
@@ -106,10 +119,57 @@ public class MyOrderFragment extends Fragment {
         }
     }
 
-    private Query getQuery(DatabaseReference mDatabase){
+    private Query getQuery(DatabaseReference mDatabase) {
         String getUserID = auth.getCurrentUser().getUid();
         Query query = mDatabase.child("Transaksi").child(getUserID);
         return query;
     }
 
+    public void hapusdata(ModelMyOrder modelMyOrder) {
+        /*
+         * Kode ini akan dipanggil ketika method onDeleteData
+         * dipanggil dari adapter pada RecyclerView melalui interface.
+         * kemudian akan menghapus data berdasarkan primary key dari data tersebut
+         * Jika berhasil, maka akan memunculkan Toast
+
+        String userID = auth.getUid();
+        String key = modelJualBarang.getKey();
+        if(mDatabase != null){
+            mDatabase.child("Transaksi")
+                    .child(userID)
+                    .child(modelJualBarang.getKey())
+                    .removeValue()
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(getContext(), "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
+
+    }
+         */
+
+        //masih belum jadi
+        String userID = auth.getUid();
+        mDatabase.child("Transaksi")
+                .child(userID)
+                .orderByChild("noHp")
+                .equalTo(modelMyOrder.noHp)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot snapshot1: snapshot.getChildren()){
+                            snapshot1.getRef().removeValue();
+                        }
+                        Toast.makeText(getContext(), "Data Dihapus", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+    }
 }

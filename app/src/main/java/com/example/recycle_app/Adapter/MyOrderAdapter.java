@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class MyOrderAdapter extends RecyclerView.ViewHolder {
 
     public TextView txt_proses, txt_nama, txt_alamat, txt_noHp,txt_subTotal;
-
+    public RelativeLayout relativeLayout;
     public MyOrderAdapter(@NonNull View itemView) {
         super(itemView);
         txt_proses = itemView.findViewById(R.id.txt_proses);
@@ -27,6 +27,7 @@ public class MyOrderAdapter extends RecyclerView.ViewHolder {
         txt_alamat = itemView.findViewById(R.id.txt_alamat);
         txt_noHp = itemView.findViewById(R.id.txt_noHp);
         txt_subTotal = itemView.findViewById(R.id.txt_subTotal);
+        relativeLayout = itemView.findViewById(R.id.item_myorder);
     }
 
     public void bindtoItemOrder(ModelMyOrder modelMyOrder){
@@ -35,5 +36,6 @@ public class MyOrderAdapter extends RecyclerView.ViewHolder {
         txt_alamat.setText(modelMyOrder.alamat);
         txt_noHp.setText(modelMyOrder.noHp);
         txt_subTotal.setText(modelMyOrder.subtotal);
+
     }
 }
