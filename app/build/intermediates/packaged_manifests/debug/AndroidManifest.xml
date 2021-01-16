@@ -34,13 +34,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Recycle_App" >
-        <activity android:name="com.example.recycle_app.Pengepul.PengepulFragment.PengepulRegisterActivity" >
+        <activity android:name="com.example.recycle_app.Pengepul.PengepulLoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.recycle_app.Pengepul.PengepulRegisterActivity" />
         <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

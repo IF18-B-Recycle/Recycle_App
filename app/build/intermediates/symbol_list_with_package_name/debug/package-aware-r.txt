@@ -2205,6 +2205,7 @@ layout activity_jual_barang
 layout activity_login
 layout activity_main
 layout activity_maps
+layout activity_pengepul_login
 layout activity_pengepul_main
 layout activity_pengepul_register
 layout activity_register
