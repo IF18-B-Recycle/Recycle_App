@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.recycle_app.User.Adapter.MyListAdapter;
 import com.example.recycle_app.User.DetailActivity;
@@ -71,6 +72,7 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(getContext(), DetailActivity.class);
+                        intent.putExtra("id_pengepul", model.id_pengepul);
                         startActivity(intent);
                     }
                 });

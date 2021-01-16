@@ -3,12 +3,12 @@ package com.example.recycle_app.User.Model;
 public class ModelJualBarang {
     private String HargaKertas, HargaPlastik, HargaLogam, HargaKaca, HargaAlmu, HargaKardus, JumlahKertas, JumlahPlastik, JumlahLogam, JumlahKaca, JumlahAlmu, JumlahKerdus;
     private String Nama, Alamat, NoHp, Subtotal,Proses,Longitude,Latitude;
-    private String Key;
+    private String id_pengepul,id_pengguna;
 
     public ModelJualBarang() {
     }
 
-    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude) {
+    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude, String id_pengepul, String id_pengguna) {
         HargaKertas = hargaKertas;
         HargaPlastik = hargaPlastik;
         HargaLogam = hargaLogam;
@@ -28,6 +28,8 @@ public class ModelJualBarang {
         Proses = proses;
         Longitude = longitude;
         Latitude = latitude;
+        this.id_pengepul = id_pengepul;
+        this.id_pengguna = id_pengguna;
     }
 
     public String getHargaKertas() {
@@ -182,11 +184,19 @@ public class ModelJualBarang {
         Latitude = latitude;
     }
 
-    public String getKey() {
-        return Key;
+    public String getId_pengepul() {
+        return id_pengepul;
     }
 
-    public void setKey(String key) {
-        Key = key;
+    public void setId_pengepul(String id_pengepul) {
+        this.id_pengepul = id_pengepul;
+    }
+
+    public String getId_pengguna() {
+        return id_pengguna;
+    }
+
+    public void setId_pengguna(String id_pengguna) {
+        this.id_pengguna = id_pengguna;
     }
 }

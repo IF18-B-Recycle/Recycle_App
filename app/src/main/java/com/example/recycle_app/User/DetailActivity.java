@@ -55,7 +55,10 @@ public class DetailActivity extends AppCompatActivity {
         btnJualBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle extras = getIntent().getExtras();
+                String id_pengepul = extras.getString("id_pengepul");
                 Intent intent = new Intent(DetailActivity.this, ActivityJualBarang.class);
+                intent.putExtra("id_pengepul", id_pengepul);
                 startActivity(intent);
             }
         });

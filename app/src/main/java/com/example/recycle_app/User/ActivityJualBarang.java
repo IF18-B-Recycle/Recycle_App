@@ -229,6 +229,9 @@ public class ActivityJualBarang extends AppCompatActivity {
         String getLongitude = longitude;
         String getLatitude = latitude;
 
+        Bundle extras = getIntent().getExtras();
+        String getId_pengepul = extras.getString("id_pengepul");
+
         getReference = database.getReference(); // Mendapatkan Referensi dari Database
 /*
         // Mengecek apakah ada data yang kosong
@@ -240,8 +243,8 @@ public class ActivityJualBarang extends AppCompatActivity {
         Jika Tidak, maka data dapat diproses dan meyimpannya pada Database
         Menyimpan data referensi pada Database berdasarkan User ID dari masing-masing Akun
         */
-        getReference.child("Transaksi").child(getUserID).push()
-                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp,getSubtotal,getProses,getLongitude,getLatitude))
+        getReference.child("Transaksi").push()
+                .setValue(new ModelJualBarang(getHargaKertas,getHargaPlastik,getHargaLogam,getHargaKaca,getHargaAlmu,getHargaKardus, getJumlahKertas,getJumlahPlastik,getJumlahLogam,getJumlahKaca,getJumlahAlmu,getJumlahKardus, getNama,getAlamat,getNoHp,getSubtotal,getProses,getLongitude,getLatitude,getId_pengepul,getUserID))
                 .addOnSuccessListener(this, new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {

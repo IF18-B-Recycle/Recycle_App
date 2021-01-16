@@ -89,13 +89,19 @@
                 android:layout_marginTop="529dp"
                 android:layout_marginEnd="42dp"
                 android:layout_marginRight="42dp"
-                android:layout_marginBottom="636dp"
                 android:text="Logout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent " />
+
+            <Button
+                android:text="ke Pengepul"
+                android:id="@+id/btKePengepul"
+                android:layout_below="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </RelativeLayout>
 

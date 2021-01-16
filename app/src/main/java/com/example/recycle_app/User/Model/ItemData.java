@@ -8,6 +8,7 @@ import java.util.Map;
 public class ItemData {
     public String nama_toko;
     public String owner;
+    public String id_pengepul;
 
     public ItemData() {
 
@@ -23,6 +24,7 @@ public class ItemData {
         HashMap<String, Object> result = new HashMap<>();
         result.put("nama_toko", nama_toko);
         result.put("owner", owner);
+        result.put("id_pengepul", id_pengepul);
         return result;
     }
 }

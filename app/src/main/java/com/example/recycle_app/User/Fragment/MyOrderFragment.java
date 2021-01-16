@@ -108,7 +108,7 @@ public class MyOrderFragment extends Fragment {
 
     private Query getQuery(DatabaseReference mDatabase) {
         String getUserID = auth.getCurrentUser().getUid();
-        Query query = mDatabase.child("Transaksi").child(getUserID);
+        Query query = mDatabase.child("Transaksi").orderByChild("id_pengguna").equalTo(getUserID);
         return query;
     }
 

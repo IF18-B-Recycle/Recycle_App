@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.recycle_app.Pengepul.PengepulLoginActivity;
 import com.example.recycle_app.User.LoginActivity;
 import com.example.recycle_app.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ProfileFragment extends Fragment {
 
-    Button btnLogout;
+    Button btnLogout, btKePengepul;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,6 +28,15 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         btnLogout = view.findViewById(R.id.logout);
+        btKePengepul = view.findViewById(R.id.btKePengepul);
+
+        btKePengepul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), PengepulLoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
