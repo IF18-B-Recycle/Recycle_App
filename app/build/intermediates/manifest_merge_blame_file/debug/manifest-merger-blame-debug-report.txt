@@ -86,8 +86,8 @@
 52
 53        <activity
 53-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:36:9-38:59
-54            android:name="com.example.recycle_app.User.MapsActivity"
-54-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-46
+54            android:name="com.example.recycle_app.Pengepul.MapsActivity"
+54-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:37:13-50
 55            android:label="@string/title_activity_maps" />
 55-->C:\Users\LENOVO\Android_Studio_Projects\Recycle_App\app\src\main\AndroidManifest.xml:38:13-56
 56        <activity android:name="com.example.recycle_app.User.ActivityJualBarang" />

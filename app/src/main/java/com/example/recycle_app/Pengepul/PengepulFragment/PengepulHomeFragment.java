@@ -1,5 +1,6 @@
 package com.example.recycle_app.Pengepul.PengepulFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,8 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.recycle_app.Pengepul.MapsActivity;
 import com.example.recycle_app.R;
 import com.example.recycle_app.User.Adapter.MyOrderAdapter;
+import com.example.recycle_app.User.DetailActivity;
 import com.example.recycle_app.User.Model.ModelMyOrder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -90,7 +93,10 @@ public class PengepulHomeFragment extends Fragment {
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getContext(), "tekan item", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getContext(), MapsActivity.class);
+                        intent.putExtra("longitude", model.longitude);
+                        intent.putExtra("latitude", model.latitude);
+                        startActivity(intent);
                     }
                 });
             }
