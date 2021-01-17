@@ -1,18 +1,19 @@
-package com.example.recycle_app.User.Model;
+package com.example.recycle_app.Pengepul.Model;
 
 public class ModelHargaBarang {
-    private String harga_aluminium,harga_botol_kaca,harga_kerdus,harga_kertas,harga_logam,harga_plastik;
+    public String harga_aluminium,harga_botol_kaca,harga_kardus,harga_kertas,harga_logam,harga_plastik,id_pengepul;
 
     public ModelHargaBarang() {
     }
 
-    public ModelHargaBarang(String harga_aluminium, String harga_botol_kaca, String harga_kerdus, String harga_kertas, String harga_logam, String harga_plastik) {
+    public ModelHargaBarang(String harga_aluminium, String harga_botol_kaca, String harga_kardus, String harga_kertas, String harga_logam, String harga_plastik, String id_pengepul) {
         this.harga_aluminium = harga_aluminium;
         this.harga_botol_kaca = harga_botol_kaca;
-        this.harga_kerdus = harga_kerdus;
+        this.harga_kardus = harga_kardus;
         this.harga_kertas = harga_kertas;
         this.harga_logam = harga_logam;
         this.harga_plastik = harga_plastik;
+        this.id_pengepul = id_pengepul;
     }
 
     public String getHarga_aluminium() {
@@ -31,12 +32,12 @@ public class ModelHargaBarang {
         this.harga_botol_kaca = harga_botol_kaca;
     }
 
-    public String getHarga_kerdus() {
-        return harga_kerdus;
+    public String getHarga_kardus() {
+        return harga_kardus;
     }
 
-    public void setHarga_kerdus(String harga_kerdus) {
-        this.harga_kerdus = harga_kerdus;
+    public void setHarga_kardus(String harga_kardus) {
+        this.harga_kardus = harga_kardus;
     }
 
     public String getHarga_kertas() {
@@ -61,5 +62,13 @@ public class ModelHargaBarang {
 
     public void setHarga_plastik(String harga_plastik) {
         this.harga_plastik = harga_plastik;
+    }
+
+    public String getId_pengepul() {
+        return id_pengepul;
+    }
+
+    public void setId_pengepul(String id_pengepul) {
+        this.id_pengepul = id_pengepul;
     }
 }

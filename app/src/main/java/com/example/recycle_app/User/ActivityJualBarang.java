@@ -18,7 +18,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.recycle_app.User.Model.ModelHargaBarang;
+import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.example.recycle_app.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -111,7 +111,7 @@ public class ActivityJualBarang extends AppCompatActivity {
                 ModelHargaBarang hargaBarang = dataSnapshot.getValue(ModelHargaBarang.class);
                 tvHargaAlmu.setText(hargaBarang.getHarga_aluminium());
                 tvHargaKaca.setText(hargaBarang.getHarga_botol_kaca());
-                tvHargaKardus.setText(hargaBarang.getHarga_kerdus());
+                tvHargaKardus.setText(hargaBarang.getHarga_kardus());
                 tvHargaKertas.setText(hargaBarang.getHarga_kertas());
                 tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
                 tvHargaLogam.setText(hargaBarang.getHarga_logam());

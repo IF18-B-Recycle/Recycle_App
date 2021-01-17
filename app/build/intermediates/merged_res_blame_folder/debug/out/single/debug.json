@@ -4,16 +4,16 @@
         "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_pengepul_home.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_profile.xml.flat",
-        "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_profile.xml"
+        "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
     },
     {
         "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
-        "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
+        "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_profile.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_profile.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\Android_Studio_Projects\\Recycle_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_myorder.xml.flat",

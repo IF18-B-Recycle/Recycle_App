@@ -40,7 +40,6 @@ public class PengepulHomeFragment extends Fragment {
 
     FirebaseAuth auth;
 
-    private List<String> followingList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -63,28 +62,6 @@ public class PengepulHomeFragment extends Fragment {
         return view;
     }
 
-    private void chekFollowing(){
-        followingList = new ArrayList<>();
-
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Transaksi");
-
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                followingList.clear();
-                for (DataSnapshot snapshot1 : snapshot.getChildren()){
-                    followingList.add(snapshot1.getKey());
-                }
-
-                getdata();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
 
     private void getdata() {
         // Set up FirebaseRecyclerAdapter with the Query

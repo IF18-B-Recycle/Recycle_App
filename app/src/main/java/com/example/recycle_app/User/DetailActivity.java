@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.recycle_app.User.Model.ModelHargaBarang;
+import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.R;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -66,7 +66,9 @@ public class DetailActivity extends AppCompatActivity {
 
     private void getdata() {
 
-        getRefenence.child("Barang").addChildEventListener(new ChildEventListener() {
+        Bundle extras = getIntent().getExtras();
+        String id_pengepul = extras.getString("id_pengepul");
+        getRefenence.child("Barang").orderByChild(id_pengepul).addChildEventListener(new ChildEventListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -74,7 +76,7 @@ public class DetailActivity extends AppCompatActivity {
                 ModelHargaBarang hargaBarang = dataSnapshot.getValue(ModelHargaBarang.class);
                 tvHargaAluminium.setText(hargaBarang.getHarga_aluminium());
                 tvHargaBotolKaca.setText(hargaBarang.getHarga_botol_kaca());
-                tvHargaKardus.setText(hargaBarang.getHarga_kerdus());
+                tvHargaKardus.setText(hargaBarang.getHarga_kardus());
                 tvHargaKertas.setText(hargaBarang.getHarga_kertas());
                 tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
                 tvHargaLogam.setText(hargaBarang.getHarga_logam());

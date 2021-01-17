@@ -1761,6 +1761,7 @@ id btKePengepul
 id btKeUser
 id btLogin
 id btRegister
+id btnHargaBarang
 id btnJual
 id btnJualBarang
 id btnLokasi
@@ -1834,6 +1835,12 @@ id enterAlwaysCollapsed
 id etAlamat
 id etEmail
 id etFirstName
+id etHargaAluminium
+id etHargaBotolKaca
+id etHargaKardus
+id etHargaKertas
+id etHargaLogam
+id etHargaPlastik
 id etJumlahAlmu
 id etJumlahKaca
 id etJumlahKardus
