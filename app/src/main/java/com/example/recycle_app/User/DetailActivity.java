@@ -51,6 +51,7 @@ public class DetailActivity extends AppCompatActivity {
         getRefenence = getDatabase.getReference();
         getdata();
 
+
         btnJualBarang = (Button)findViewById(R.id.btnJualBarang);
         btnJualBarang.setOnClickListener(new View.OnClickListener() {
             @Override

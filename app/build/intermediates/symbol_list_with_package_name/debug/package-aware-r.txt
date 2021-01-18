@@ -2104,6 +2104,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAlamatRinci
+id tvEmailPengepul
 id tvHargaAlmu
 id tvHargaAluminium
 id tvHargaBotolKaca
@@ -2118,7 +2119,9 @@ id tvJmlKardus
 id tvJmlKertas
 id tvJmlLogam
 id tvJmlPlastik
+id tvNamaPengepul
 id tvNamaRinci
+id tvNamaToko
 id tvNoHpRinci
 id tvOwner
 id tvTotalBarang

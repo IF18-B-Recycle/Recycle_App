@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -102,7 +103,6 @@ public class ActivityJualBarang extends AppCompatActivity {
     }
 
     private void getdata() {
-
         getRefenence.child("Barang").addChildEventListener(new ChildEventListener() {
             @SuppressLint("SetTextI18n")
             @Override
