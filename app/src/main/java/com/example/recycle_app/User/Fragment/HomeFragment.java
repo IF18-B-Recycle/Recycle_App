@@ -1,5 +1,7 @@
 package com.example.recycle_app.User.Fragment;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,10 +17,12 @@ import android.widget.Toast;
 
 import com.example.recycle_app.User.Adapter.MyListAdapter;
 import com.example.recycle_app.User.DetailActivity;
+import com.example.recycle_app.User.LoginActivity;
 import com.example.recycle_app.User.Model.ItemData;
 import com.example.recycle_app.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -81,6 +85,30 @@ public class HomeFragment extends Fragment {
 
         mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);
+    }
+
+    public void OnBackPressed(){
+        new AlertDialog.Builder(getContext())
+                .setTitle("Apakah Anda ingin Keluar?")
+                .setMessage("Yakin ingin Keluar?")
+                .setCancelable(false)
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .show();
+    }
+
+    private void finish() {
+
     }
 
     @Override

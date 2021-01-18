@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -62,9 +64,7 @@ public class ProfileFragment extends Fragment {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intToMain = new Intent(getContext(), LoginActivity.class);
-                startActivity(intToMain);
+                showDialog();
             }
         });
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -114,6 +114,29 @@ public class ProfileFragment extends Fragment {
     public static Intent getActIntent(Activity activity) {
         // kode untuk pengambilan Intent
         return new Intent(activity, ProfileFragment.class);
+    }
+
+    private void showDialog(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
+        alertDialog.setTitle("Apakah Anda ingin Logout?")
+                .setMessage("Yakin ingin Logout?")
+                .setCancelable(false)
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseAuth.getInstance().signOut();
+                        Intent intToMain = new Intent(getContext(), LoginActivity.class);
+                        startActivity(intToMain);
+                    }
+                })
+                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialog.create();
+        alert.show();
     }
 
 }
