@@ -33,7 +33,6 @@
                 android:layout_marginTop="99dp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="Nama          : "
                 android:textSize="20sp" />
 
             <TextView
@@ -43,7 +42,6 @@
                 android:layout_below="@id/getNama"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="No HP         :"
                 android:textSize="20sp" />
 
 
@@ -54,7 +52,6 @@
                 android:layout_below="@id/getNoHp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="Alamat        :"
                 android:textSize="20sp" />
 
 
@@ -65,7 +62,6 @@
                 android:layout_below="@id/getAlamat"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="Email           :"
                 android:textSize="20sp" />
 
             <TextView
