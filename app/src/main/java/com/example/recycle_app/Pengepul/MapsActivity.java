@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.recycle_app.R;
-import com.example.recycle_app.RincianTransaksiActivity;
 import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;

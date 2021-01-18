@@ -33,6 +33,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.IOException;
 import java.util.List;
@@ -103,41 +104,27 @@ public class ActivityJualBarang extends AppCompatActivity {
     }
 
     private void getdata() {
-        getRefenence.child("Barang").addChildEventListener(new ChildEventListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                //Mengambil daftar item dari database, setiap kali ada turunannya
-                ModelHargaBarang hargaBarang = dataSnapshot.getValue(ModelHargaBarang.class);
-                tvHargaAlmu.setText(hargaBarang.getHarga_aluminium());
-                tvHargaKaca.setText(hargaBarang.getHarga_botol_kaca());
-                tvHargaKardus.setText(hargaBarang.getHarga_kardus());
-                tvHargaKertas.setText(hargaBarang.getHarga_kertas());
-                tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
-                tvHargaLogam.setText(hargaBarang.getHarga_logam());
-            }
+        Bundle extras = getIntent().getExtras();
+        String id_pengepul = extras.getString("id_pengepul");
+        getRefenence.child("Barang").child(id_pengepul)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        //Mengambil daftar item dari database, setiap kali ada turunannya
+                        ModelHargaBarang hargaBarang = snapshot.getValue(ModelHargaBarang.class);
+                        tvHargaAlmu.setText(hargaBarang.getHarga_aluminium());
+                        tvHargaKaca.setText(hargaBarang.getHarga_botol_kaca());
+                        tvHargaKardus.setText(hargaBarang.getHarga_kardus());
+                        tvHargaKertas.setText(hargaBarang.getHarga_kertas());
+                        tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
+                        tvHargaLogam.setText(hargaBarang.getHarga_logam());
+                    }
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                //......
-            }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-                //......
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-                //.....
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                //Digunakan untuk menangani kejadian Error
-                Log.e("MyListData", "Error: ", databaseError.toException());
-            }
-        });
+                    }
+                });
     }
 
 

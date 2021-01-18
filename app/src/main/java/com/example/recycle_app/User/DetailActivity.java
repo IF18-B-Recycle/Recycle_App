@@ -1,5 +1,6 @@
 package com.example.recycle_app.User;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.R;
@@ -18,6 +20,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -26,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
     TextView tvnamaTempat;
     TextView tvOwner;
 
-    TextView tvHargaKertas,tvHargaPlastik,tvHargaLogam,tvHargaAluminium,tvHargaBotolKaca,tvHargaKardus;
+    TextView tvHargaKertas, tvHargaPlastik, tvHargaLogam, tvHargaAluminium, tvHargaBotolKaca, tvHargaKardus;
 
     private FirebaseDatabase getDatabase;
     private DatabaseReference getRefenence;
@@ -36,9 +39,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        ivImage = (ImageView)findViewById(R.id.ivImage);
-        tvnamaTempat = (TextView)findViewById(R.id.tvnamaTempat);
-        tvOwner = (TextView)findViewById(R.id.tvOwner);
+        ivImage = (ImageView) findViewById(R.id.ivImage);
+        tvnamaTempat = (TextView) findViewById(R.id.tvnamaTempat);
+        tvOwner = (TextView) findViewById(R.id.tvOwner);
 
         tvHargaKertas = findViewById(R.id.tvHargaKertas);
         tvHargaPlastik = findViewById(R.id.tvHargaPlastik);
@@ -52,7 +55,7 @@ public class DetailActivity extends AppCompatActivity {
         getdata();
 
 
-        btnJualBarang = (Button)findViewById(R.id.btnJualBarang);
+        btnJualBarang = (Button) findViewById(R.id.btnJualBarang);
         btnJualBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,43 +69,27 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void getdata() {
-
         Bundle extras = getIntent().getExtras();
         String id_pengepul = extras.getString("id_pengepul");
-        getRefenence.child("Barang").orderByChild(id_pengepul).addChildEventListener(new ChildEventListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                //Mengambil daftar item dari database, setiap kali ada turunannya
-                ModelHargaBarang hargaBarang = dataSnapshot.getValue(ModelHargaBarang.class);
-                tvHargaAluminium.setText(hargaBarang.getHarga_aluminium());
-                tvHargaBotolKaca.setText(hargaBarang.getHarga_botol_kaca());
-                tvHargaKardus.setText(hargaBarang.getHarga_kardus());
-                tvHargaKertas.setText(hargaBarang.getHarga_kertas());
-                tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
-                tvHargaLogam.setText(hargaBarang.getHarga_logam());
-            }
+        getRefenence.child("Barang")
+                .child(id_pengepul)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        //Mengambil daftar item dari database, setiap kali ada turunannya
+                        ModelHargaBarang hargaBarang = snapshot.getValue(ModelHargaBarang.class);
+                        tvHargaAluminium.setText(hargaBarang.getHarga_aluminium());
+                        tvHargaBotolKaca.setText(hargaBarang.getHarga_botol_kaca());
+                        tvHargaKardus.setText(hargaBarang.getHarga_kardus());
+                        tvHargaKertas.setText(hargaBarang.getHarga_kertas());
+                        tvHargaPlastik.setText(hargaBarang.getHarga_plastik());
+                        tvHargaLogam.setText(hargaBarang.getHarga_logam());
+                    }
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                //......
-            }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-                //......
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-                //.....
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                //Digunakan untuk menangani kejadian Error
-                Log.e("MyListData", "Error: ", databaseError.toException());
-            }
-        });
+                    }
+                });
     }
 }

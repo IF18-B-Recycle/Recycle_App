@@ -1,4 +1,4 @@
-package com.example.recycle_app;
+package com.example.recycle_app.Pengepul;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.recycle_app.R;
 
 public class RincianTransaksiActivity extends AppCompatActivity {
     TextView tvNamaRinci, tvAlamatRinci, tvNoHpRinci;

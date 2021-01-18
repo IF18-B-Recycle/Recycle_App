@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycle_App">
-        <activity android:name=".RincianTransaksiActivity"></activity>
+        <activity android:name=".Pengepul.RincianTransaksiActivity"></activity>
         <activity android:name=".Pengepul.PengepulLoginActivity"></activity>
         <activity android:name=".Pengepul.PengepulRegisterActivity" />
         <activity android:name=".Pengepul.PengepulMainActivity" />

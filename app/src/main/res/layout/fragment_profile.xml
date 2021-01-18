@@ -18,50 +18,53 @@
 
             <TextView
                 android:id="@+id/txtprofile"
-                android:layout_marginTop="15dp"
                 android:layout_width="177dp"
                 android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
                 android:text="PROFILE"
                 android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/getNama"
-                android:layout_width="129dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="99dp"
+                android:layout_below="@+id/txtprofile"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
+                android:text="nama"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/getNoHp"
-                android:layout_width="129dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/getNama"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
+                android:text="no hp"
                 android:textSize="20sp" />
 
 
             <TextView
                 android:id="@+id/getAlamat"
-                android:layout_width="132dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/getNoHp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
+                android:text="alamat"
                 android:textSize="20sp" />
 
 
             <TextView
                 android:id="@+id/getEmail"
-                android:layout_width="131dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/getAlamat"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
+                android:text="email"
                 android:textSize="20sp" />
 
             <TextView
@@ -92,17 +95,10 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent " />
 
-            <Button
-                android:text="ke Pengepul"
-                android:id="@+id/btKePengepul"
-                android:layout_below="@+id/logout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
         </RelativeLayout>
 
     </ScrollView>
-
 
 
 </RelativeLayout>
