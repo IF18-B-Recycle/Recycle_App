@@ -91,8 +91,8 @@ public class HistoryFragment extends Fragment {
                 holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        showDialog();
-                        return true;
+                        showDialog(holder);
+                        return false;
                     }
                 });
             }
@@ -124,7 +124,7 @@ public class HistoryFragment extends Fragment {
         return query;
     }
 
-    private void showDialog(){
+    private void showDialog(MyOrderAdapter myOrderAdapter){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
         alertDialog.setTitle("Apakah Anda Yakin Menghapus ini?")
                 .setMessage("Data yang dihapus tidak dapat kembali")
@@ -132,7 +132,7 @@ public class HistoryFragment extends Fragment {
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        hapusdata(modelMyOrder);
+                        hapusdata(myOrderAdapter);
                     }
                 })
                 .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
@@ -146,11 +146,11 @@ public class HistoryFragment extends Fragment {
     }
 
 
-    public void hapusdata(ModelMyOrder modelMyOrder) {
+    public void hapusdata(MyOrderAdapter myOrderAdapter) {
 
         mDatabase.child("Transaksi")
                 .orderByChild("id_transaksi")
-                .equalTo(modelMyOrder.id_transaksi)
+                .equalTo(myOrderAdapter.txtId_transaksi.getText().toString())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

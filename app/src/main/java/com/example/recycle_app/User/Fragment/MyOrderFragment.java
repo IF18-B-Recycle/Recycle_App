@@ -44,8 +44,6 @@ public class MyOrderFragment extends Fragment {
 
     FirebaseAuth auth;
 
-    ModelMyOrder modelMyOrder = new ModelMyOrder();
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -88,11 +86,10 @@ public class MyOrderFragment extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull MyOrderAdapter holder, int position, @NonNull final ModelMyOrder model) {
                 holder.bindtoItemOrder(model);
-                holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public boolean onLongClick(View v) {
-                        showDialog();
-                        return true;
+                    public void onClick(View v) {
+                        showDialog(holder);
                     }
                 });
             }
@@ -124,7 +121,7 @@ public class MyOrderFragment extends Fragment {
         return query;
     }
 
-    private void showDialog(){
+    private void showDialog(MyOrderAdapter myOrderAdapter){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
         alertDialog.setTitle("Apakah Anda Yakin Menghapus ini?")
                 .setMessage("Data yang dihapus tidak dapat kembali")
@@ -132,7 +129,7 @@ public class MyOrderFragment extends Fragment {
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        hapusdata(modelMyOrder);
+                        hapusdata(myOrderAdapter);
                     }
                 })
                 .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
@@ -145,11 +142,10 @@ public class MyOrderFragment extends Fragment {
         alert.show();
     }
 
-    public void hapusdata(ModelMyOrder modelMyOrder) {
-
+    public void hapusdata(MyOrderAdapter myOrderAdapter) {
         mDatabase.child("Transaksi")
                 .orderByChild("id_transaksi")
-                .equalTo(modelMyOrder.id_transaksi)
+                .equalTo(myOrderAdapter.txtId_transaksi.getText().toString())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

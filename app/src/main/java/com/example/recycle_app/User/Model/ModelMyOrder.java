@@ -62,4 +62,172 @@ public class ModelMyOrder {
         result.put("id_transaksi",id_transaksi);
         return result;
     }
+
+    public String getHargaKertas() {
+        return hargaKertas;
+    }
+
+    public void setHargaKertas(String hargaKertas) {
+        this.hargaKertas = hargaKertas;
+    }
+
+    public String getHargaPlastik() {
+        return hargaPlastik;
+    }
+
+    public void setHargaPlastik(String hargaPlastik) {
+        this.hargaPlastik = hargaPlastik;
+    }
+
+    public String getHargaLogam() {
+        return hargaLogam;
+    }
+
+    public void setHargaLogam(String hargaLogam) {
+        this.hargaLogam = hargaLogam;
+    }
+
+    public String getHargaKaca() {
+        return hargaKaca;
+    }
+
+    public void setHargaKaca(String hargaKaca) {
+        this.hargaKaca = hargaKaca;
+    }
+
+    public String getHargaAlmu() {
+        return hargaAlmu;
+    }
+
+    public void setHargaAlmu(String hargaAlmu) {
+        this.hargaAlmu = hargaAlmu;
+    }
+
+    public String getHargaKardus() {
+        return hargaKardus;
+    }
+
+    public void setHargaKardus(String hargaKardus) {
+        this.hargaKardus = hargaKardus;
+    }
+
+    public String getJumlahKertas() {
+        return jumlahKertas;
+    }
+
+    public void setJumlahKertas(String jumlahKertas) {
+        this.jumlahKertas = jumlahKertas;
+    }
+
+    public String getJumlahPlastik() {
+        return jumlahPlastik;
+    }
+
+    public void setJumlahPlastik(String jumlahPlastik) {
+        this.jumlahPlastik = jumlahPlastik;
+    }
+
+    public String getJumlahLogam() {
+        return jumlahLogam;
+    }
+
+    public void setJumlahLogam(String jumlahLogam) {
+        this.jumlahLogam = jumlahLogam;
+    }
+
+    public String getJumlahKaca() {
+        return jumlahKaca;
+    }
+
+    public void setJumlahKaca(String jumlahKaca) {
+        this.jumlahKaca = jumlahKaca;
+    }
+
+    public String getJumlahAlmu() {
+        return jumlahAlmu;
+    }
+
+    public void setJumlahAlmu(String jumlahAlmu) {
+        this.jumlahAlmu = jumlahAlmu;
+    }
+
+    public String getJumlahKerdus() {
+        return jumlahKerdus;
+    }
+
+    public void setJumlahKerdus(String jumlahKerdus) {
+        this.jumlahKerdus = jumlahKerdus;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNoHp() {
+        return noHp;
+    }
+
+    public void setNoHp(String noHp) {
+        this.noHp = noHp;
+    }
+
+    public String getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(String subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public String getProses() {
+        return proses;
+    }
+
+    public void setProses(String proses) {
+        this.proses = proses;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getId_transaksi() {
+        return id_transaksi;
+    }
+
+    public void setId_transaksi(String id_transaksi) {
+        this.id_transaksi = id_transaksi;
+    }
 }
