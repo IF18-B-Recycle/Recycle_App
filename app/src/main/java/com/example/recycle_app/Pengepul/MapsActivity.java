@@ -32,9 +32,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     Location myLocation = null;
     ModelJualBarang modelJualBarang = new ModelJualBarang();
-    String alamat = modelJualBarang.getAlamat();
-    String nama = modelJualBarang.getNama();
 
+
+    String latitude,longitude,id_transaksi;
     private DatabaseReference database;
 
     @Override
@@ -51,6 +51,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         database = FirebaseDatabase.getInstance().getReference();
 
+        Bundle extras = getIntent().getExtras();
+        longitude = extras.getString("longitude");
+        latitude = extras.getString("latitude");
+        id_transaksi = extras.getString("id_transaksi");
+
         btRincianTransaksi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,8 +70,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View v) {
                 //ubah data Transaksi pada bagian proses jadi "dalam penjemputan"
 
-                modelJualBarang.setProses("Dalam Penjemputan");
-                updateTransaksi(modelJualBarang);
+                updateTransaksi();
 
                 //kalo bisa langsung tampilkan rute untuk menuju ke tempat penjemputan
 
@@ -84,8 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // set pesan dari dialog
         alertDialogBuilder
-                .setMessage("Anda Sedang menjemput " + nama +"/n" +
-                        "Lokasi di " + alamat)
+                .setMessage("Anda Sedang menjempu")
                 .setIcon(R.mipmap.ic_launcher)
                 .setCancelable(false)
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
@@ -103,18 +106,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     //Proses Update data yang sudah ditentukan
-    private void updateTransaksi(ModelJualBarang modelJualBarang){
-        String id_transaksi = modelJualBarang.getId_transaksi();
-        database.child("Transaksi")
-                .child(id_transaksi)
-                .setValue(modelJualBarang)
+    private void updateTransaksi(){
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference()
+                .child("Transaksi")
+                .child(id_transaksi);
+
+        reference.child("proses").setValue("Dalam Penjemputan")
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        dialogJemput();
-                        finish();
-                    }
-                });
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(MapsActivity.this, "Anda Sedang Menjemput" +id_transaksi, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     /**
@@ -130,9 +135,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        Bundle extras = getIntent().getExtras();
-        String longitude = extras.getString("longitude");
-        String latitude = extras.getString("latitude");
+
 
         // Add a marker in Sydney and move the camera
         LatLng latLng = new LatLng(Double.parseDouble(latitude), Double.parseDouble(longitude));

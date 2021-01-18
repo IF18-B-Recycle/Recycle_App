@@ -25,7 +25,7 @@ public class PengepulLoginActivity extends AppCompatActivity {
 
     EditText etEmail, etPassword;
     Button btnLogIn;
-    TextView tvSignUp;
+    TextView txtRegister;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -39,9 +39,9 @@ public class PengepulLoginActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         btnLogIn = findViewById(R.id.btLogin);
-        tvSignUp = findViewById(R.id.txtBelumAkun);
+        txtRegister = findViewById(R.id.txtRegister);
 
-        tvSignUp.setOnClickListener(new View.OnClickListener() {
+        txtRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intSignUp = new Intent(PengepulLoginActivity.this, PengepulRegisterActivity.class);

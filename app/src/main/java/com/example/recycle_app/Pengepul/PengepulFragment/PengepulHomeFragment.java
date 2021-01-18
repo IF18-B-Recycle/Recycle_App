@@ -96,6 +96,7 @@ public class PengepulHomeFragment extends Fragment {
                         Intent intent = new Intent(getContext(), MapsActivity.class);
                         intent.putExtra("longitude", model.longitude);
                         intent.putExtra("latitude", model.latitude);
+                        intent.putExtra("id_transaksi",model.id_transaksi);
                         startActivity(intent);
                     }
                 });

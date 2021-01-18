@@ -2116,6 +2116,7 @@ id txtEmail
 id txtFirstName
 id txtLastName
 id txtLogin
+id txtLoginPengepul
 id txtNamaToko
 id txtPassword
 id txtRegister

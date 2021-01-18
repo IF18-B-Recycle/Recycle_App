@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.recycle_app.Pengepul.PengepulLoginActivity;
 import com.example.recycle_app.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -22,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText etEmail, etPassword;
     Button btnLogIn;
-    TextView tvSignUp;
+    TextView txtRegister, txtLoginPengepul;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -35,9 +36,18 @@ public class LoginActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         btnLogIn = findViewById(R.id.btLogin);
-        tvSignUp = findViewById(R.id.txtBelumAkun);
+        txtRegister = findViewById(R.id.txtRegister);
+        txtLoginPengepul = findViewById(R.id.txtLoginPengepul);
 
-        tvSignUp.setOnClickListener(new View.OnClickListener() {
+        txtLoginPengepul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, PengepulLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intSignUp = new Intent(LoginActivity.this, RegisterActivity.class);
