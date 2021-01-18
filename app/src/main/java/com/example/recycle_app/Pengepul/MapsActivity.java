@@ -4,6 +4,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.recycle_app.R;
+import com.example.recycle_app.RincianTransaksiActivity;
 import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -60,6 +62,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 // menampikan activity rincian transaksi
+                Intent intent = new Intent(MapsActivity.this, RincianTransaksiActivity.class);
+                startActivity(intent);
                 //isinya rincian transaksi semua yang ada di child transaksi tampilkan
             }
         });

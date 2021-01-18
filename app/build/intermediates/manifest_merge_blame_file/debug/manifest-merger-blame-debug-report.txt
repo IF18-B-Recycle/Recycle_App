@@ -59,12 +59,14 @@
 35        android:testOnly="true"
 36        android:theme="@style/Theme.Recycle_App" >
 36-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:19:9-49
-37        <activity android:name="com.example.recycle_app.Pengepul.PengepulLoginActivity" >
-37-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:9-21:20
-37-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:19-65
-38        </activity>
+37        <activity android:name="com.example.recycle_app.RincianTransaksiActivity" />
+37-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:9-71
+37-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:19-59
+38        <activity android:name="com.example.recycle_app.Pengepul.PengepulLoginActivity" />
+38-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:21:9-77
+38-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:21:19-65
 39        <activity android:name="com.example.recycle_app.Pengepul.PengepulRegisterActivity" />
-39-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:9-80
+39-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:9-71
 39-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:19-68
 40        <activity android:name="com.example.recycle_app.Pengepul.PengepulMainActivity" />
 40-->D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:23:9-67

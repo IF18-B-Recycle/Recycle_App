@@ -17,9 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycle_App">
-        <activity android:name=".Pengepul.PengepulLoginActivity">
-        </activity>
-        <activity android:name=".Pengepul.PengepulRegisterActivity"></activity>
+        <activity android:name=".RincianTransaksiActivity"></activity>
+        <activity android:name=".Pengepul.PengepulLoginActivity"></activity>
+        <activity android:name=".Pengepul.PengepulRegisterActivity" />
         <activity android:name=".Pengepul.PengepulMainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

@@ -1,16 +1,25 @@
 com/example/recycle_app/Pengepul/PengepulFragment/PengepulProfileFragment.java
  com.example.recycle_app.Pengepul.PengepulFragment.PengepulProfileFragment
  com.example.recycle_app.Pengepul.PengepulFragment.PengepulProfileFragment$1
-com/example/recycle_app/User/Adapter/MyOrderAdapter.java
- com.example.recycle_app.User.Adapter.MyOrderAdapter
-com/example/recycle_app/Pengepul/PengepulRegisterActivity.java
- com.example.recycle_app.Pengepul.PengepulRegisterActivity
- com.example.recycle_app.Pengepul.PengepulRegisterActivity$1
- com.example.recycle_app.Pengepul.PengepulRegisterActivity$1$1
+com/example/recycle_app/User/Fragment/ProfileFragment.java
+ com.example.recycle_app.User.Fragment.ProfileFragment
+ com.example.recycle_app.User.Fragment.ProfileFragment$1
+ com.example.recycle_app.User.Fragment.ProfileFragment$2
+ com.example.recycle_app.User.Fragment.ProfileFragment$3
+ com.example.recycle_app.User.Fragment.ProfileFragment$4
+ com.example.recycle_app.User.Fragment.ProfileFragment$5
+com/example/recycle_app/User/Fragment/HomeFragment.java
+ com.example.recycle_app.User.Fragment.HomeFragment
+ com.example.recycle_app.User.Fragment.HomeFragment$1
+ com.example.recycle_app.User.Fragment.HomeFragment$1$1
+ com.example.recycle_app.User.Fragment.HomeFragment$2
+ com.example.recycle_app.User.Fragment.HomeFragment$3
 com/example/recycle_app/User/DetailActivity.java
  com.example.recycle_app.User.DetailActivity
  com.example.recycle_app.User.DetailActivity$1
  com.example.recycle_app.User.DetailActivity$2
+com/example/recycle_app/RincianTransaksiActivity.java
+ com.example.recycle_app.RincianTransaksiActivity
 com/example/recycle_app/About/Activity_About_AwalRafiHardika.java
  com.example.recycle_app.About.Activity_About_AwalRafiHardika
 com/example/recycle_app/Pengepul/PengepulMainActivity.java
@@ -46,8 +55,9 @@ com/example/recycle_app/User/Fragment/MyOrderFragment.java
  com.example.recycle_app.User.Fragment.MyOrderFragment$1
  com.example.recycle_app.User.Fragment.MyOrderFragment$1$1
  com.example.recycle_app.User.Fragment.MyOrderFragment$2
-com/example/recycle_app/User/Model/ModelMyOrder.java
- com.example.recycle_app.User.Model.ModelMyOrder
+com/example/recycle_app/User/MainActivity.java
+ com.example.recycle_app.User.MainActivity
+ com.example.recycle_app.User.MainActivity$1
 com/example/recycle_app/BuildConfig.java
  com.example.recycle_app.BuildConfig
 com/example/recycle_app/User/Adapter/MyListAdapter.java
@@ -85,19 +95,11 @@ com/example/recycle_app/Pengepul/PengepulLoginActivity.java
  com.example.recycle_app.Pengepul.PengepulLoginActivity$2
  com.example.recycle_app.Pengepul.PengepulLoginActivity$3
  com.example.recycle_app.Pengepul.PengepulLoginActivity$3$1
-com/example/recycle_app/User/Fragment/ProfileFragment.java
- com.example.recycle_app.User.Fragment.ProfileFragment
- com.example.recycle_app.User.Fragment.ProfileFragment$1
- com.example.recycle_app.User.Fragment.ProfileFragment$2
- com.example.recycle_app.User.Fragment.ProfileFragment$3
- com.example.recycle_app.User.Fragment.ProfileFragment$4
- com.example.recycle_app.User.Fragment.ProfileFragment$5
-com/example/recycle_app/User/MainActivity.java
- com.example.recycle_app.User.MainActivity
- com.example.recycle_app.User.MainActivity$1
-com/example/recycle_app/User/Fragment/HomeFragment.java
- com.example.recycle_app.User.Fragment.HomeFragment
- com.example.recycle_app.User.Fragment.HomeFragment$1
- com.example.recycle_app.User.Fragment.HomeFragment$1$1
- com.example.recycle_app.User.Fragment.HomeFragment$2
- com.example.recycle_app.User.Fragment.HomeFragment$3
+com/example/recycle_app/Pengepul/PengepulRegisterActivity.java
+ com.example.recycle_app.Pengepul.PengepulRegisterActivity
+ com.example.recycle_app.Pengepul.PengepulRegisterActivity$1
+ com.example.recycle_app.Pengepul.PengepulRegisterActivity$1$1
+com/example/recycle_app/User/Model/ModelMyOrder.java
+ com.example.recycle_app.User.Model.ModelMyOrder
+com/example/recycle_app/User/Adapter/MyOrderAdapter.java
+ com.example.recycle_app.User.Adapter.MyOrderAdapter

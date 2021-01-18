@@ -183,12 +183,16 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\GA
 		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
 		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:19:9-49
-activity#com.example.recycle_app.Pengepul.PengepulLoginActivity
-ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:9-21:20
+activity#com.example.recycle_app.RincianTransaksiActivity
+ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:9-71
 	android:name
-		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:19-65
+		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:20:19-59
+activity#com.example.recycle_app.Pengepul.PengepulLoginActivity
+ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:21:9-77
+	android:name
+		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:21:19-65
 activity#com.example.recycle_app.Pengepul.PengepulRegisterActivity
-ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:9-80
+ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:9-71
 	android:name
 		ADDED from D:\Pemrograman Mobile 2\Recycle_App\app\src\main\AndroidManifest.xml:22:19-68
 activity#com.example.recycle_app.Pengepul.PengepulMainActivity
