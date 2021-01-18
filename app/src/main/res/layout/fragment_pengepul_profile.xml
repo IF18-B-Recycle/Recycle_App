@@ -3,66 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".Pengepul.PengepulFragment.PengepulProfileFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profil Pengepul"
-        android:textSize="40dp"/>
+        android:textSize="40dp" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Pengepul"
-            android:textSize="30dp"/>
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/tvNamaPengepul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama"
-            android:textSize="20dp"/>
+            android:textSize="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textSize="30dp"/>
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/tvEmailPengepul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textSize="20dp"/>
+            android:textSize="30dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Toko"
-            android:textSize="30dp"/>
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/tvNamaToko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Toko"
-            android:textSize="20dp"/>
+            android:textSize="30dp" />
 
         <Button
-            android:layout_marginTop="20dp"
+            android:id="@+id/btLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="pindah ke user"
-            android:id="@+id/btKeUser"/>
+            android:layout_marginTop="20dp"
+            android:text="Log Out" />
 
     </LinearLayout>
 </LinearLayout>

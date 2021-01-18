@@ -25,9 +25,9 @@ public class PengepulLoginActivity extends AppCompatActivity {
 
     EditText etEmail, etPassword;
     Button btnLogIn;
-    TextView txtRegister;
+    TextView txtRegister,txtLoginUser;
     FirebaseAuth mFirebaseAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
+    FirebaseAuth.AuthStateListener mAuthStateListener;
 
 
     @Override
@@ -40,12 +40,21 @@ public class PengepulLoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnLogIn = findViewById(R.id.btLogin);
         txtRegister = findViewById(R.id.txtRegister);
+        txtLoginUser = findViewById(R.id.txtLoginUser);
 
         txtRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intSignUp = new Intent(PengepulLoginActivity.this, PengepulRegisterActivity.class);
                 startActivity(intSignUp);
+            }
+        });
+
+        txtLoginUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PengepulLoginActivity.this,LoginActivity.class);
+                startActivity(intent);
             }
         });
 

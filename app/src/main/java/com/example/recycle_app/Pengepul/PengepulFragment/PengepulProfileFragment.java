@@ -56,7 +56,7 @@ public class PengepulProfileFragment extends Fragment {
         getRefenence = getDatabase.getReference();
         getdata();
 
-        btKeUser = view.findViewById(R.id.btKeUser);
+        btKeUser = view.findViewById(R.id.btLogout);
         btKeUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

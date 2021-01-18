@@ -1758,8 +1758,8 @@ id bottom
 id bottom_navigation
 id bounce
 id btJemputSekarang
-id btKeUser
 id btLogin
+id btLogout
 id btRegister
 id btRincianTransaksi
 id btnHargaBarang
@@ -1980,6 +1980,7 @@ id percent
 id pin
 id position
 id postLayout
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -2134,6 +2135,7 @@ id txtFirstName
 id txtLastName
 id txtLogin
 id txtLoginPengepul
+id txtLoginUser
 id txtNamaToko
 id txtNoHp
 id txtPassword

@@ -108,7 +108,34 @@
             android:textColor="#17B61F"
             android:layout_toRightOf="@id/txtBelumAkun" />
 
-
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footer"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:text="Anda Adalah User?" />
+
+        <TextView
+            android:id="@+id/txtLoginUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtBelumAkun"
+            android:layout_toRightOf="@id/txtBelumAkun"
+            android:text="Login Disini"
+            android:textColor="#17B61F" />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>

@@ -16,62 +16,93 @@
             android:layout_height="wrap_content"
             android:padding="15dp">
 
-            <TextView
-                android:id="@+id/txtprofile"
-                android:layout_width="177dp"
-                android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:text="PROFILE"
-                android:textSize="40sp" />
-
-            <TextView
-                android:id="@+id/getNama"
+            <LinearLayout
+                android:id="@+id/profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txtprofile"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:text="nama"
-                android:textSize="20sp" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/getNoHp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/getNama"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:text="no hp"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtprofile"
+                    android:layout_width="177dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="PROFILE"
+                    android:textSize="40sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/getAlamat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/getNoHp"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:text="alamat"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/getNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtprofile"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="nama"
+                    android:textSize="30sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Handphone"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/getEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/getAlamat"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:text="email"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/getNoHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/getNama"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="no hp"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/getAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/getNoHp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="alamat"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/getEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/getAlamat"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="email"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/txtAboutView"
                 android:layout_width="380dp"
                 android:layout_height="140dp"
-                android:layout_below="@id/getEmail"
+                android:layout_below="@id/profile"
                 android:layout_marginTop="33dp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
@@ -82,18 +113,14 @@
                 android:id="@+id/logout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
+                android:layout_below="@+id/txtAboutView"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="529dp"
-                android:layout_marginEnd="42dp"
-                android:layout_marginRight="42dp"
                 android:text="Logout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent " />
+                app:layout_constraintRight_toRightOf="parent" />
 
 
         </RelativeLayout>

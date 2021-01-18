@@ -96,12 +96,6 @@ public class ProfileFragment extends Fragment {
         });
     }
 
-
-    public static Intent getActIntent(Activity activity) {
-        // kode untuk pengambilan Intent
-        return new Intent(activity, ProfileFragment.class);
-    }
-
     private void showDialog(){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
         alertDialog.setTitle("Apakah Anda ingin Logout?")

@@ -62,6 +62,8 @@ public class ActivityJualBarang extends AppCompatActivity {
         setContentView(R.layout.activity_jual_barang);
         auth = FirebaseAuth.getInstance();
 
+        Toast.makeText(this, "tekan dapatkan lokasi untuk share lokasi", Toast.LENGTH_LONG).show();
+
         tvHargaKertas = findViewById(R.id.tvHargaKertas);
         tvHargaPlastik = findViewById(R.id.tvHargaPlastik);
         tvHargaLogam = findViewById(R.id.tvHargaLogam);

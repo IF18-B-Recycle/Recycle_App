@@ -77,6 +77,8 @@ public class HomeFragment extends Fragment {
                     public void onClick(View v) {
                         Intent intent = new Intent(getContext(), DetailActivity.class);
                         intent.putExtra("id_pengepul", model.id_pengepul);
+                        intent.putExtra("nama_toko", model.nama_toko);
+                        intent.putExtra("owner", model.firstName);
                         startActivity(intent);
                     }
                 });

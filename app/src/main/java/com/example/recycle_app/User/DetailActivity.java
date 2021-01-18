@@ -39,9 +39,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        ivImage = (ImageView) findViewById(R.id.ivImage);
-        tvnamaTempat = (TextView) findViewById(R.id.tvnamaTempat);
-        tvOwner = (TextView) findViewById(R.id.tvOwner);
+        ivImage = findViewById(R.id.ivImage);
+        tvnamaTempat = findViewById(R.id.tvnamaTempat);
+        tvOwner = findViewById(R.id.tvOwner);
 
         tvHargaKertas = findViewById(R.id.tvHargaKertas);
         tvHargaPlastik = findViewById(R.id.tvHargaPlastik);
@@ -49,6 +49,14 @@ public class DetailActivity extends AppCompatActivity {
         tvHargaAluminium = findViewById(R.id.tvHargaAluminium);
         tvHargaBotolKaca = findViewById(R.id.tvHargaBotolKaca);
         tvHargaKardus = findViewById(R.id.tvHargaKardus);
+
+        Bundle extras = getIntent().getExtras();
+        String id_pengepul = extras.getString("id_pengepul");
+        String nama_toko = extras.getString("nama_toko");
+        String owner = extras.getString("owner");
+
+        tvnamaTempat.setText(nama_toko);
+        tvOwner.setText(owner);
 
         getDatabase = FirebaseDatabase.getInstance();
         getRefenence = getDatabase.getReference();
@@ -59,8 +67,6 @@ public class DetailActivity extends AppCompatActivity {
         btnJualBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle extras = getIntent().getExtras();
-                String id_pengepul = extras.getString("id_pengepul");
                 Intent intent = new Intent(DetailActivity.this, ActivityJualBarang.class);
                 intent.putExtra("id_pengepul", id_pengepul);
                 startActivity(intent);

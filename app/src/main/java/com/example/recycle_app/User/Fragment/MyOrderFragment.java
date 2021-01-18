@@ -1,5 +1,8 @@
 package com.example.recycle_app.User.Fragment;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.User.Adapter.MyOrderAdapter;
+import com.example.recycle_app.User.LoginActivity;
 import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.example.recycle_app.User.Model.ModelMyOrder;
 import com.example.recycle_app.R;
@@ -40,11 +44,15 @@ public class MyOrderFragment extends Fragment {
 
     FirebaseAuth auth;
 
+    ModelMyOrder modelMyOrder = new ModelMyOrder();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_my_order, container, false);
+
+        Toast.makeText(getContext(), "Tekan Lama untuk hapus data", Toast.LENGTH_LONG).show();
 
         //Untuk atuhentikasi user yang login
         auth = FirebaseAuth.getInstance();
@@ -83,7 +91,7 @@ public class MyOrderFragment extends Fragment {
                 holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        hapusdata(model);
+                        showDialog();
                         return true;
                     }
                 });
@@ -116,6 +124,27 @@ public class MyOrderFragment extends Fragment {
         return query;
     }
 
+    private void showDialog(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
+        alertDialog.setTitle("Apakah Anda Yakin Menghapus ini?")
+                .setMessage("Data yang dihapus tidak dapat kembali")
+                .setCancelable(false)
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        hapusdata(modelMyOrder);
+                    }
+                })
+                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialog.create();
+        alert.show();
+    }
+
     public void hapusdata(ModelMyOrder modelMyOrder) {
 
         mDatabase.child("Transaksi")
@@ -138,4 +167,6 @@ public class MyOrderFragment extends Fragment {
                 });
 
     }
+
+
 }

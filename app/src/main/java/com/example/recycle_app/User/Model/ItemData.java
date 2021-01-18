@@ -7,23 +7,23 @@ import java.util.Map;
 
 public class ItemData {
     public String nama_toko;
-    public String owner;
+    public String firstName;
     public String id_pengepul;
 
     public ItemData() {
 
     }
 
-    public ItemData(String nama_toko, String owner) {
+    public ItemData(String nama_toko, String firstName) {
         this.nama_toko = nama_toko;
-        this.owner = owner;
+        this.firstName = firstName;
     }
 
     @Exclude
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
         result.put("nama_toko", nama_toko);
-        result.put("owner", owner);
+        result.put("firstName", firstName);
         result.put("id_pengepul", id_pengepul);
         return result;
     }
