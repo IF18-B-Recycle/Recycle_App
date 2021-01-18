@@ -40,10 +40,6 @@ public class MyOrderFragment extends Fragment {
 
     FirebaseAuth auth;
 
-    ModelJualBarang modelJualBarang = new ModelJualBarang();
-    public String id_transaksi;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -84,10 +80,11 @@ public class MyOrderFragment extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull MyOrderAdapter holder, int position, @NonNull final ModelMyOrder model) {
                 holder.bindtoItemOrder(model);
-                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
-                    public void onClick(View v) {
+                    public boolean onLongClick(View v) {
                         hapusdata(model);
+                        return true;
                     }
                 });
             }
@@ -120,31 +117,7 @@ public class MyOrderFragment extends Fragment {
     }
 
     public void hapusdata(ModelMyOrder modelMyOrder) {
-        /*
-         * Kode ini akan dipanggil ketika method onDeleteData
-         * dipanggil dari adapter pada RecyclerView melalui interface.
-         * kemudian akan menghapus data berdasarkan primary key dari data tersebut
-         * Jika berhasil, maka akan memunculkan Toast
 
-        String userID = auth.getUid();
-        String key = modelJualBarang.getKey();
-        if(mDatabase != null){
-            mDatabase.child("Transaksi")
-                    .child(userID)
-                    .child(modelJualBarang.getKey())
-                    .removeValue()
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(getContext(), "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-        }
-
-    }
-         */
-
-        String userID = auth.getUid();
         mDatabase.child("Transaksi")
                 .orderByChild("id_transaksi")
                 .equalTo(modelMyOrder.id_transaksi)
