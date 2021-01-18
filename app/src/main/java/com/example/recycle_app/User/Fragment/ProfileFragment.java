@@ -5,7 +5,7 @@ package com.example.recycle_app.User.Fragment;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.annotation.SuppressLint;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,7 +23,6 @@ import com.example.recycle_app.R;
 import com.example.recycle_app.User.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
