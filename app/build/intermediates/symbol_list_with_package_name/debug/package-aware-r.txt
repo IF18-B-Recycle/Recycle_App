@@ -1757,11 +1757,12 @@ id blocking
 id bottom
 id bottom_navigation
 id bounce
+id btJemputSekarang
 id btKePengepul
 id btKeUser
 id btLogin
 id btRegister
-id btToast
+id btRincianTransaksi
 id btnHargaBarang
 id btnJual
 id btnJualBarang

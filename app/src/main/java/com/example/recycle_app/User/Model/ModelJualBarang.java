@@ -3,12 +3,12 @@ package com.example.recycle_app.User.Model;
 public class ModelJualBarang {
     private String HargaKertas, HargaPlastik, HargaLogam, HargaKaca, HargaAlmu, HargaKardus, JumlahKertas, JumlahPlastik, JumlahLogam, JumlahKaca, JumlahAlmu, JumlahKerdus;
     private String Nama, Alamat, NoHp, Subtotal,Proses,Longitude,Latitude;
-    private String id_pengepul,id_pengguna;
+    private String id_pengepul,id_pengguna, id_transaksi;
 
     public ModelJualBarang() {
     }
 
-    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude, String id_pengepul, String id_pengguna) {
+    public ModelJualBarang(String hargaKertas, String hargaPlastik, String hargaLogam, String hargaKaca, String hargaAlmu, String hargaKardus, String jumlahKertas, String jumlahPlastik, String jumlahLogam, String jumlahKaca, String jumlahAlmu, String jumlahKerdus, String nama, String alamat, String noHp, String subtotal, String proses, String longitude, String latitude, String id_pengepul, String id_pengguna, String id_transaksi) {
         HargaKertas = hargaKertas;
         HargaPlastik = hargaPlastik;
         HargaLogam = hargaLogam;
@@ -30,6 +30,7 @@ public class ModelJualBarang {
         Latitude = latitude;
         this.id_pengepul = id_pengepul;
         this.id_pengguna = id_pengguna;
+        this.id_transaksi = id_transaksi;
     }
 
     public String getHargaKertas() {
@@ -198,5 +199,13 @@ public class ModelJualBarang {
 
     public void setId_pengguna(String id_pengguna) {
         this.id_pengguna = id_pengguna;
+    }
+
+    public String getId_transaksi() {
+        return id_transaksi;
+    }
+
+    public void setId_transaksi(String id_transaksi) {
+        this.id_transaksi = id_transaksi;
     }
 }

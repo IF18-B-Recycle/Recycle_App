@@ -38,6 +38,7 @@
                 android:text="Luky Rafi Anuggilarso"
                 android:textSize="14sp" />
 
+
             <TextView
                 android:id="@+id/txt_alamat"
                 android:layout_width="wrap_content"
@@ -86,7 +87,14 @@
                 android:text="20000"
                 android:textSize="14sp" />
 
-
+            <TextView
+                android:id="@+id/txt_idTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_subTotal"
+                android:padding="8dp"
+                android:text="id transaksi"
+                android:textSize="14sp" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

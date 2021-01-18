@@ -2,6 +2,8 @@ package com.example.recycle_app.Pengepul;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.recycle_app.R;
+import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,14 +20,22 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
-    Button btToast;
+    Button btJemputSekarang, btRincianTransaksi;
 
     Location myLocation = null;
+    ModelJualBarang modelJualBarang = new ModelJualBarang();
+    String alamat = modelJualBarang.getAlamat();
+    String nama = modelJualBarang.getNama();
+
+    private DatabaseReference database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,22 +46,75 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        btToast = findViewById(R.id.btToast);
+        btJemputSekarang = findViewById(R.id.btJemputSekarang);
+        btRincianTransaksi = findViewById(R.id.btRincianTransaksi);
 
+        database = FirebaseDatabase.getInstance().getReference();
 
-
-
-        btToast.setOnClickListener(new View.OnClickListener() {
+        btRincianTransaksi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle extras = getIntent().getExtras();
-                String longitude = extras.getString("longitude");
-                String latitude = extras.getString("latitude");
-
-                Toast.makeText(MapsActivity.this, longitude, Toast.LENGTH_SHORT).show();
-                Toast.makeText(MapsActivity.this, latitude, Toast.LENGTH_SHORT).show();
+                // menampikan activity rincian transaksi
+                //isinya rincian transaksi semua yang ada di child transaksi tampilkan
             }
         });
+
+
+        btJemputSekarang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //ubah data Transaksi pada bagian proses jadi "dalam penjemputan"
+
+                modelJualBarang.setProses("Dalam Penjemputan");
+                updateTransaksi(modelJualBarang);
+
+                //kalo bisa langsung tampilkan rute untuk menuju ke tempat penjemputan
+
+
+            }
+        });
+    }
+
+    private void dialogJemput(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
+
+        // set title dialog
+        alertDialogBuilder.setTitle("Penjemputan Barang Rongsok");
+
+        // set pesan dari dialog
+        alertDialogBuilder
+                .setMessage("Anda Sedang menjemput " + nama +"/n" +
+                        "Lokasi di " + alamat)
+                .setIcon(R.mipmap.ic_launcher)
+                .setCancelable(false)
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // do something
+                    }
+                });
+
+        // membuat alert dialog dari builder
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // menampilkan alert dialog
+        alertDialog.show();
+    }
+
+    //Proses Update data yang sudah ditentukan
+    private void updateTransaksi(ModelJualBarang modelJualBarang){
+        String id_transaksi = modelJualBarang.getId_transaksi();
+        database.child("Transaksi")
+                .child(id_transaksi)
+                .setValue(modelJualBarang)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        dialogJemput();
+                        finish();
+                    }
+                });
     }
 
     /**

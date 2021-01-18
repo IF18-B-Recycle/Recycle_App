@@ -3,6 +3,7 @@ package com.example.recycle_app.User.Fragment;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,12 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.User.Adapter.MyOrderAdapter;
+import com.example.recycle_app.User.Model.ModelJualBarang;
 import com.example.recycle_app.User.Model.ModelMyOrder;
 import com.example.recycle_app.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,6 +39,9 @@ public class MyOrderFragment extends Fragment {
     private RecyclerView mRecyclerView;
 
     FirebaseAuth auth;
+
+    ModelJualBarang modelJualBarang = new ModelJualBarang();
+    public String id_transaksi;
 
 
     @Override
@@ -137,19 +144,18 @@ public class MyOrderFragment extends Fragment {
     }
          */
 
-        //masih belum jadi
         String userID = auth.getUid();
         mDatabase.child("Transaksi")
-                .child(userID)
-                .orderByChild("noHp")
-                .equalTo(modelMyOrder.noHp)
+                .orderByChild("id_transaksi")
+                .equalTo(modelMyOrder.id_transaksi)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         for (DataSnapshot snapshot1: snapshot.getChildren()){
                             snapshot1.getRef().removeValue();
                         }
-                        Toast.makeText(getContext(), "Data Dihapus", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+
                     }
 
                     @Override

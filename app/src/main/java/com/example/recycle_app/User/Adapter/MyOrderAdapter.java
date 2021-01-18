@@ -12,7 +12,7 @@ import com.example.recycle_app.R;
 
 public class MyOrderAdapter extends RecyclerView.ViewHolder {
 
-    public TextView txt_proses, txt_nama, txt_alamat, txt_noHp,txt_subTotal;
+    public TextView txt_proses, txt_nama, txt_alamat, txt_noHp,txt_subTotal,txtId_transaksi;
     public RelativeLayout relativeLayout;
     public MyOrderAdapter(@NonNull View itemView) {
         super(itemView);
@@ -22,6 +22,8 @@ public class MyOrderAdapter extends RecyclerView.ViewHolder {
         txt_noHp = itemView.findViewById(R.id.txt_noHp);
         txt_subTotal = itemView.findViewById(R.id.txt_subTotal);
         relativeLayout = itemView.findViewById(R.id.item_myorder);
+        txtId_transaksi = itemView.findViewById(R.id.txt_idTransaksi);
+
     }
 
     public void bindtoItemOrder(ModelMyOrder modelMyOrder){
@@ -30,6 +32,7 @@ public class MyOrderAdapter extends RecyclerView.ViewHolder {
         txt_alamat.setText(modelMyOrder.alamat);
         txt_noHp.setText(modelMyOrder.noHp);
         txt_subTotal.setText(modelMyOrder.subtotal);
+        txtId_transaksi.setText(modelMyOrder.id_transaksi);
 
     }
 }
