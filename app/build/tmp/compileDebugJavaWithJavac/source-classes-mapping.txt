@@ -5,7 +5,6 @@ com/example/recycle_app/User/Fragment/ProfileFragment.java
  com.example.recycle_app.User.Fragment.ProfileFragment
  com.example.recycle_app.User.Fragment.ProfileFragment$1
  com.example.recycle_app.User.Fragment.ProfileFragment$2
- com.example.recycle_app.User.Fragment.ProfileFragment$3
 com/example/recycle_app/User/Fragment/HomeFragment.java
  com.example.recycle_app.User.Fragment.HomeFragment
  com.example.recycle_app.User.Fragment.HomeFragment$1
@@ -28,14 +27,10 @@ com/example/recycle_app/Pengepul/PengepulFragment/PengepulBarangFragment.java
  com.example.recycle_app.Pengepul.PengepulFragment.PengepulBarangFragment$2
 com/example/recycle_app/User/Fragment/HistoryFragment.java
  com.example.recycle_app.User.Fragment.HistoryFragment
-com/example/recycle_app/User/Model/User.java
- com.example.recycle_app.User.Model.User
 com/example/recycle_app/User/Model/Pengguna.java
  com.example.recycle_app.User.Model.Pengguna
-com/example/recycle_app/Pengepul/PengepulFragment/PengepulHomeFragment.java
- com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment
- com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment$1
- com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment$1$1
+com/example/recycle_app/User/Model/ModelMyOrder.java
+ com.example.recycle_app.User.Model.ModelMyOrder
 com/example/recycle_app/Pengepul/Model/ModelHargaBarang.java
  com.example.recycle_app.Pengepul.Model.ModelHargaBarang
 com/example/recycle_app/About/Activity_About_LukyRafiAnuggilarso.java
@@ -75,6 +70,8 @@ com/example/recycle_app/User/RegisterActivity.java
  com.example.recycle_app.User.RegisterActivity
  com.example.recycle_app.User.RegisterActivity$1
  com.example.recycle_app.User.RegisterActivity$1$1
+com/example/recycle_app/User/Adapter/MyOrderAdapter.java
+ com.example.recycle_app.User.Adapter.MyOrderAdapter
 com/example/recycle_app/Pengepul/PengepulLoginActivity.java
  com.example.recycle_app.Pengepul.PengepulLoginActivity
  com.example.recycle_app.Pengepul.PengepulLoginActivity$1
@@ -85,9 +82,11 @@ com/example/recycle_app/Pengepul/PengepulRegisterActivity.java
  com.example.recycle_app.Pengepul.PengepulRegisterActivity
  com.example.recycle_app.Pengepul.PengepulRegisterActivity$1
  com.example.recycle_app.Pengepul.PengepulRegisterActivity$1$1
-com/example/recycle_app/User/Model/ModelMyOrder.java
- com.example.recycle_app.User.Model.ModelMyOrder
-com/example/recycle_app/User/Adapter/MyOrderAdapter.java
- com.example.recycle_app.User.Adapter.MyOrderAdapter
-com/example/recycle_app/User/MapsActivity.java
- com.example.recycle_app.User.MapsActivity
+com/example/recycle_app/Pengepul/MapsActivity.java
+ com.example.recycle_app.Pengepul.MapsActivity
+ com.example.recycle_app.Pengepul.MapsActivity$1
+ com.example.recycle_app.Pengepul.MapsActivity$2
+com/example/recycle_app/Pengepul/PengepulFragment/PengepulHomeFragment.java
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment$1
+ com.example.recycle_app.Pengepul.PengepulFragment.PengepulHomeFragment$1$1

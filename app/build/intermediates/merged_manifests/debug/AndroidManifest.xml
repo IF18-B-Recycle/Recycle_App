@@ -51,7 +51,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example.recycle_app.User.MapsActivity"
+            android:name="com.example.recycle_app.Pengepul.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name="com.example.recycle_app.User.ActivityJualBarang" />
         <activity android:name="com.example.recycle_app.User.DetailActivity" />
