@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.recycle_app.R;
 import com.example.recycle_app.User.Model.ModelJualBarang;
+import com.example.recycle_app.User.Model.ModelMyOrder;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -32,7 +33,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Button btJemputSekarang, btRincianTransaksi;
 
     Location myLocation = null;
-    ModelJualBarang modelJualBarang = new ModelJualBarang();
+    ModelMyOrder modelMyOrder = new ModelMyOrder();
+
 
 
     String latitude,longitude,id_transaksi;
@@ -62,6 +64,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View v) {
                 // menampikan activity rincian transaksi
                 Intent intent = new Intent(MapsActivity.this, RincianTransaksiActivity.class);
+                intent.putExtra("id_transaksi",id_transaksi);
                 startActivity(intent);
                 //isinya rincian transaksi semua yang ada di child transaksi tampilkan
             }
