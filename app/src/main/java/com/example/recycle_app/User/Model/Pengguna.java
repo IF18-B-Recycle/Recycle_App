@@ -1,67 +1,67 @@
 package com.example.recycle_app.User.Model;
 
 public class  Pengguna {
-    public String FirstName, LastName, Email, Password, Alamat, NoHp;
+    public String firstName, lastName, email, password, alamat, noHp;
     private String key;
 
     public Pengguna() {
     }
 
     public Pengguna(String firstName, String lastName, String email, String password, String alamat, String noHp) {
-        FirstName = firstName;
-        LastName = lastName;
-        Email = email;
-        Password = password;
-        Alamat = alamat;
-        NoHp = noHp;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.alamat = alamat;
+        this.noHp = noHp;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
     public String getAlamat() {
-        return Alamat;
+        return alamat;
     }
 
     public void setAlamat(String alamat) {
-        Alamat = alamat;
+        this.alamat = alamat;
     }
 
     public String getNoHp() {
-        return NoHp;
+        return noHp;
     }
 
     public void setNoHp(String noHp) {
-        NoHp = noHp;
+        this.noHp = noHp;
     }
 
     public String getKey() {

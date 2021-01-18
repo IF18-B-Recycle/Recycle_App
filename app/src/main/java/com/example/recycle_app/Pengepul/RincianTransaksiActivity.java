@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.recycle_app.Pengepul.Model.ModelHargaBarang;
 import com.example.recycle_app.R;
 import com.example.recycle_app.User.Model.ModelJualBarang;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -73,7 +74,9 @@ public class RincianTransaksiActivity extends AppCompatActivity {
         btnProses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RincianTransaksiActivity.this, id_transaksi, Toast.LENGTH_SHORT).show();
+                updateTransaksi();
+                Toast.makeText(RincianTransaksiActivity.this, "Transaksi Telah Selesai", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RincianTransaksiActivity.this, "Terimakasih Kerjasamanya", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -117,7 +120,7 @@ public class RincianTransaksiActivity extends AppCompatActivity {
                         Integer subtotalBarang = jumlahKertas + jumlahPlastik + jumlahLogam + jumlahKaca + jumlahAlmu + jumlahKardus;
 
                         String totalBarang = String.valueOf(subtotalBarang);
-                        
+
                         tvTotalBarang.setText(totalBarang);
                     }
 
@@ -126,5 +129,22 @@ public class RincianTransaksiActivity extends AppCompatActivity {
 
                     }
                 });
+    }
+
+    //Proses Update data yang sudah ditentukan
+    private void updateTransaksi(){
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference()
+                .child("Transaksi")
+                .child(id_transaksi);
+
+        reference.child("proses").setValue("Transaksi Selesai")
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(RincianTransaksiActivity.this, "Transaksi Berhasil" +id_transaksi, Toast.LENGTH_SHORT).show();
+                    }
+                });
+
     }
 }
