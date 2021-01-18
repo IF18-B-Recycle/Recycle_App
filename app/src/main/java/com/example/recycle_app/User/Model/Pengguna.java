@@ -1,49 +1,67 @@
 package com.example.recycle_app.User.Model;
 
 public class  Pengguna {
-        public String etFirstName,etLastName,etEmail,etPassword;
-        private String key;
+    public String FirstName, LastName, Email, Password, Alamat, NoHp;
+    private String key;
 
-    public Pengguna(){
-        }
-
-    public  Pengguna(String firstname, String lastname,String email , String pwd){
-            this.etFirstName = firstname;
-            this.etLastName= lastname ;
-            this.etEmail= email ;
-            this.etPassword = pwd;
+    public Pengguna() {
     }
 
-    public String getEtFirstName() {
-        return etFirstName;
+    public Pengguna(String firstName, String lastName, String email, String password, String alamat, String noHp) {
+        FirstName = firstName;
+        LastName = lastName;
+        Email = email;
+        Password = password;
+        Alamat = alamat;
+        NoHp = noHp;
     }
 
-    public void setEtFirstName(String etFirstName) {
-        this.etFirstName = etFirstName;
+    public String getFirstName() {
+        return FirstName;
     }
 
-    public String getEtLastName() {
-        return etLastName;
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
     }
 
-    public void setEtLastName(String etLastName) {
-        this.etLastName = etLastName;
+    public String getLastName() {
+        return LastName;
     }
 
-    public String getEtEmail() {
-        return etEmail;
+    public void setLastName(String lastName) {
+        LastName = lastName;
     }
 
-    public void setEtEmail(String etEmail) {
-        this.etEmail = etEmail;
+    public String getEmail() {
+        return Email;
     }
 
-    public String getEtPassword() {
-        return etPassword;
+    public void setEmail(String email) {
+        Email = email;
     }
 
-    public void setEtPassword(String etPassword) {
-        this.etPassword = etPassword;
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getAlamat() {
+        return Alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        Alamat = alamat;
+    }
+
+    public String getNoHp() {
+        return NoHp;
+    }
+
+    public void setNoHp(String noHp) {
+        NoHp = noHp;
     }
 
     public String getKey() {
@@ -54,6 +72,3 @@ public class  Pengguna {
         this.key = key;
     }
 }
-
-
-

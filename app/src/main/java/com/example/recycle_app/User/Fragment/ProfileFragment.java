@@ -82,10 +82,10 @@ public class ProfileFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Pengguna pengguna  = snapshot.getValue(Pengguna.class);
                 if (pengguna != null) {
-                    NamaTextView.setText(pengguna.getEtFirstName()+pengguna.getEtLastName());
-                    NohpTextView.setText("88888888");
-                    AlamatTextView.setText("alamat nya belum ada");
-                    EmailTextView.setText(pengguna.getEtEmail());
+                    NamaTextView.setText(pengguna.getFirstName()+pengguna.getLastName());
+                    NohpTextView.setText(pengguna.getNoHp());
+                    AlamatTextView.setText(pengguna.getAlamat());
+                    EmailTextView.setText(pengguna.getEmail());
                 }
             }
 

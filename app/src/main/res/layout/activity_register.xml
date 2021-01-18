@@ -107,10 +107,50 @@
                 android:padding="10dp"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPassword"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Last Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAlamat"
+                android:background="@drawable/backround_edittext"
+                android:hint="Alamat"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtNoHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAlamat"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="No Hp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etNoHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNoHp"
+                android:background="@drawable/backround_edittext"
+                android:hint="No Hp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
             <Button
                 android:background="@drawable/background_button"
                 android:id="@+id/btRegister"
-                android:layout_below="@id/etPassword"
+                android:layout_below="@id/etNoHp"
                 android:layout_centerHorizontal="true"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -118,8 +158,5 @@
                 android:text="REGISTER" />
 
         </RelativeLayout>
-
-
     </ScrollView>
-
 </RelativeLayout>

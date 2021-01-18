@@ -2127,6 +2127,7 @@ id tvTotalBarang
 id tvTotalHarga
 id tvnamaTempat
 id txtAboutView
+id txtAlamat
 id txtBelumAkun
 id txtEmail
 id txtFirstName
@@ -2134,6 +2135,7 @@ id txtLastName
 id txtLogin
 id txtLoginPengepul
 id txtNamaToko
+id txtNoHp
 id txtPassword
 id txtRegister
 id txt_Rp

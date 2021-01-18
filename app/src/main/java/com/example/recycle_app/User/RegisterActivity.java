@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText etFirstName, etLastName, etEmail, etPassword;
+    EditText etFirstName, etLastName, etEmail, etPassword, etAlamat, etNoHp;
     Button BtnRegister;
     TextView tvSignIn;
     FirebaseAuth mFirebaseAuth;
@@ -31,11 +31,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         mFirebaseAuth = FirebaseAuth.getInstance();
+
         etFirstName = findViewById(R.id.etFirstName);
         etLastName = findViewById(R.id.etLastName);
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
+        etAlamat = findViewById(R.id.etAlamat);
+        etNoHp = findViewById(R.id.etNoHp);
+
         BtnRegister = findViewById(R.id.btRegister);
         BtnRegister.setOnClickListener(this);
 
@@ -52,10 +57,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void BtnRegister() {
-        final String firstname = etFirstName.getText().toString().trim();
-        final String lastname = etLastName.getText().toString().trim();
+        final String firstName = etFirstName.getText().toString().trim();
+        final String lastName = etLastName.getText().toString().trim();
         final String email = etEmail.getText().toString().trim();
-        final String pwd = etPassword.getText().toString().trim();
+        final String password = etPassword.getText().toString().trim();
+        final String alamat = etAlamat.getText().toString().trim();
+        final String noHp = etNoHp.getText().toString().trim();
 
 
         if (email.isEmpty()) {
@@ -63,32 +70,41 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             etEmail.requestFocus();
             return;
         }
-
-        if (pwd.isEmpty()) {
+        if (password.isEmpty()) {
             etPassword.setError("Please enter Password");
             etPassword.requestFocus();
             return;
         }
-
-        if (firstname.isEmpty()) {
+        if (firstName.isEmpty()) {
             etFirstName.setError("Please enter Nama");
             etFirstName.requestFocus();
             return;
         }
-        if (lastname.isEmpty()) {
+        if (lastName.isEmpty()) {
             etLastName.setError("Please enter Nama");
             etLastName.requestFocus();
+            return;
+        }
+        if (alamat.isEmpty()) {
+            etAlamat.setError("Please enter Alamat");
+            etAlamat.requestFocus();
+            return;
+        }
+        if (noHp.isEmpty()) {
+            etNoHp.setError("Please enter No Hp");
+            etNoHp.requestFocus();
             return;
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             etEmail.setError("Email anda tidak ditemukan");
             return;
         }
-        mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+        mFirebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    Pengguna user = new Pengguna(firstname, lastname, email, pwd);
+                    Pengguna user = new Pengguna(firstName, lastName, email, password, alamat, noHp);
                     FirebaseDatabase.getInstance().getReference("Pengguna").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                             .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
 
